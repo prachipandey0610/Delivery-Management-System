@@ -68,7 +68,7 @@ body {
     margin-bottom: 0px;
 }
 -->
-</style> 
+</style>
 
 <style type="text/css">
 <!--
@@ -113,9 +113,10 @@ function MM_validateForm() { //v4.0
 
     </td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF">
+
     
     
 <table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
@@ -123,6 +124,7 @@ function MM_validateForm() { //v4.0
     <td id="ds_calclass"> </td> 
   </tr> 
 </tbody></table> 
+
 <script type="text/javascript">
 // <!-- <![CDATA[
 
@@ -165,7 +167,7 @@ var ds_oe = ds_getel('ds_calclass');
 var ds_ce = ds_getel('ds_conclass');
 
 // Output Buffering
-var ds_ob = ''; 
+var ds_ob = '';
 function ds_ob_clean() {
     ds_ob = '';
 }
@@ -311,6 +313,7 @@ function ds_hi() {
 
 // Moves to the next month...
 function ds_nm() {
+
     // Increase the current month.
     ds_c_month ++;
     // We have passed December, let's go to the next year.
@@ -321,10 +324,12 @@ function ds_nm() {
     }
     // Redraw the calendar.
     ds_draw_calendar(ds_c_month, ds_c_year);
+
 }
 
 // Moves to the previous month...
 function ds_pm() {
+
     ds_c_month = ds_c_month - 1; // Can't use dash-dash here, it will make the page invalid.
     // We have passed January, let's go back to the previous year.
     // Decrease the current year, and set the current month to December.
@@ -334,6 +339,7 @@ function ds_pm() {
     }
     // Redraw the calendar.
     ds_draw_calendar(ds_c_month, ds_c_year);
+
 }
 
 // Moves to the next year...
@@ -382,8 +388,10 @@ function ds_onclick(d, m, y) {
 
 function getSelected(opt)
  {
+
  
      var opt=document.frmExport.opt;
+
             for (var intLoop = 0; intLoop < opt.length; intLoop++)
              {
               if (!(opt.options[intLoop].selected))
@@ -391,8 +399,10 @@ function getSelected(opt)
                        alert("Select any one field!");
                     return false;
                }
+
             }
             return true;           
+
   }
 
 // And here is the end.
@@ -405,10 +415,10 @@ function getSelected(opt)
     <tr>
       <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add New Office Manager </span></td>
     </tr>
-    
+
   </tbody>
   </table>
-<form action="process.php?action=add-office" method="post" name="frmShipment" > 
+<form action="process.php?action=add-office" method="post" name="frmShipment" >
 <div class="gentxt" align="right">
 <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
 <tbody><tr>
@@ -467,7 +477,7 @@ function getSelected(opt)
             <td>&nbsp;</td>
             <td><input name="OfficeTiming" id="OfficeTiming" maxlength="30" size="40" type="TEXT"></td>
           </tr>
-          
+
           <tr>
             <td class="TrackMediumBlue" align="right">Contact Person : </td>
             <td>&nbsp;</td>
@@ -478,7 +488,7 @@ function getSelected(opt)
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
-          
+
           <tr>
             <td align="right">&nbsp;</td>
             <td>&nbsp;</td>
@@ -499,7 +509,7 @@ function getSelected(opt)
   </tr>
 </tbody></table>
 <br>
-</form> 
+</form>
 
     </td>
   </tr>

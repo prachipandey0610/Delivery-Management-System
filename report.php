@@ -22,11 +22,13 @@ isUser();
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="780">
   <tbody><tr>
     <td width="780">
+
 <?php require "header.php"; ?>    
+
 
     </td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF"><div align="center"> <br>
         <br>
@@ -85,7 +87,7 @@ isUser();
         </tbody></table>
         <br>
           <br>
-          <br>      
+          <br>
           <br>
     </div></td>
   </tr>

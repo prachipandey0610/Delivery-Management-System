@@ -37,7 +37,7 @@ function MM_validateForm() { //v4.0
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-	
+
 <table border="0" cellpadding="0" cellspacing="0" width="900">
 <tbody><tr>
 <td><img src="images/trheader.jpg" height="109" width="900"></td>
@@ -48,13 +48,13 @@ function MM_validateForm() { //v4.0
 </tbody></table>
 	</td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF"><table border="0" cellpadding="1" cellspacing="1" align="center" width="98%">
       <tbody><tr>
         <td class="Partext1">&nbsp;</td>
       </tr>
-      
+
       <tr>
         <td class="Partext1"><div align="center">
           <table cellpadding="4" cellspacing="0" align="center" width="70%">
@@ -69,7 +69,7 @@ function validate()
 		}
 	}
 </script>
-            
+
               <tbody><tr>
                 <td class="TrackTitle" valign="top"><div class="newtext" align="center"><strong> Track and Trace your Cargo/Courier <br>
                         </strong></div></td>
@@ -83,7 +83,7 @@ function validate()
               <tr bgcolor="EFEFEF">
                 <td valign="top"><div align="center">
             <form action="track-result.php" method="post" name="form" id="form" >
-			      <input name="Consignment" class="gentxt" id="Consignment" maxlength="50" type="text"> 
+			      <input name="Consignment" class="gentxt" id="Consignment" maxlength="50" type="text">
                   <input name="Submit" type="submit" class="gentxt" onClick="MM_validateForm('Consignment','','R');return document.MM_returnValue" value="Track now">
             </form>
 			      <span class="gentxt">Ex: IXM53533553 </span> </div></td>
@@ -94,15 +94,15 @@ function validate()
               <tr bgcolor="EFEFEF">
                 <td class="TrackNormalBlue" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
               </tr>
-            
+
           </tbody></table>
         </div></td>
         </tr>
       <tr>
         <td class="Partext1">&nbsp;</td>
         </tr>
-      
-      
+
+
       <tr>
         <td>&nbsp;</td>
         </tr>

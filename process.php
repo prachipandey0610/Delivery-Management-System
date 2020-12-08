@@ -6,6 +6,7 @@ require_once 'database.php';
 
 $action = $_GET['action'];
 
+
 switch ($action) {
 case 'add-cons':
     addCons($dbConn);
@@ -69,7 +70,6 @@ function addCons($dbConn)
     //echo $sql;
     mysqli_query($dbConn, $sql);
     header('Location: courier-add-success.php');
-    
     //echo $Ship;
 }//addCons
 
@@ -79,6 +79,7 @@ function markDelivered($dbConn)
     $sql = "UPDATE tbl_courier
 			SET status = 'Delivered'
 			WHERE cid= $cid";
+
     mysqli_query($dbConn, $sql);
     header('Location: delivered-success.php');
 }//markDelivered();
@@ -93,10 +94,12 @@ function addNewOffice($dbConn)
     $ContactPerson = $_POST['ContactPerson'];
     
     $sql = "INSERT INTO tbl_offices (off_name, address, city, ph_no, office_time, contact_person)
+
 			VALUES ('$OfficeName', '$OfficeAddress', '$City', '$PhoneNo', '$OfficeTiming', '$ContactPerson')";
     mysqli_query($dbConn, $sql);
     header('Location: office-add-success.php');
 }//addNewOffice
+
 
 function addManager($dbConn)
 {
@@ -108,10 +111,12 @@ function addManager($dbConn)
     $OfficeName = $_POST['OfficeName'];
     
     $sql = "INSERT INTO tbl_courier_officers (officer_name, off_pwd, address, email, ph_no, office, reg_date)
+
 			VALUES ('$ManagerName', '$Password', '$Address', '$Email', '$PhoneNo', '$OfficeName', NOW())";
     mysqli_query($dbConn, $sql);
     header('Location: manager-add-success.php');
 }//addNewOffice
+
 
 function updateStatus($dbConn)
 {
@@ -133,6 +138,7 @@ function updateStatus($dbConn)
     mysqli_query($dbConn, $sql_1);
     
     header('Location: update-success.php');
+
 }//addNewOffice
 
 
@@ -148,3 +154,6 @@ function logOut()
     session_destroy();
     header('Location: login.php');
 }//logOut
+
+?>
+

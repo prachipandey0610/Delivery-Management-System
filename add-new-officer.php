@@ -73,7 +73,7 @@ body {
     margin-bottom: 0px;
 }
 -->
-</style> 
+</style>
 
 <style type="text/css">
 <!--
@@ -118,9 +118,10 @@ function MM_validateForm() { //v4.0
 
     </td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF">
+
     
     
 <table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
@@ -128,16 +129,17 @@ function MM_validateForm() { //v4.0
     <td id="ds_calclass"> </td> 
   </tr> 
 </tbody></table> 
+
  <br/>
   <table border="0" align="center" width="100%">
     <tbody>
     <tr>
       <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add New Office Manager </span></td>
     </tr>
-    
+
   </tbody>
   </table>
-<form action="process.php?action=add-manager" method="post" name="frmShipment" > 
+<form action="process.php?action=add-manager" method="post" name="frmShipment" >
 <div class="gentxt" align="right">
 <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
 <tbody><tr>
@@ -200,6 +202,7 @@ function MM_validateForm() { //v4.0
             <td class="TrackMediumBlue" align="right">Office Name : </td>
             <td>&nbsp;</td>
             <td>
+
             <select name="OfficeName">
             <?php
             while ($data = dbFetchAssoc($result)) {
@@ -210,14 +213,15 @@ function MM_validateForm() { //v4.0
             ?>
             </select>
             </td>
+
           </tr>
-          
+
           <tr>
             <td class="TrackMediumBlue" align="right">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
-          
+
           <tr>
             <td align="right">&nbsp;</td>
             <td>&nbsp;</td>
@@ -238,7 +242,7 @@ function MM_validateForm() { //v4.0
   </tr>
 </tbody></table>
 <br>
-</form> 
+</form>
 
     </td>
   </tr>

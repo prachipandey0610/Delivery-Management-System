@@ -10,10 +10,12 @@ $sql = "SELECT *
 		WHERE cid = $cid";
 $sql_1 = "SELECT DISTINCT(off_name)
 		FROM tbl_offices";
+
 $result =  mysqli_query($dbConn, $sql);
 $result_1 =  mysqli_query($dbConn, $sql_1);
 while ($data = mysqli_fetch_array($result)) {
     extract($data); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -39,12 +41,12 @@ while ($data = mysqli_fetch_array($result)) {
 
   </tr>
 
-  
+
 
   <tr>
 
     <td bgcolor="#FFFFFF">
-    
+
 <style type="text/css">
 .ds_box {
     background-color: #FFF;
@@ -120,17 +122,17 @@ body {
 
 
 
- 
 
-<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
 
-  <tbody><tr> 
+<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0">
 
-    <td id="ds_calclass"> </td> 
+  <tbody><tr>
 
-  </tr> 
+    <td id="ds_calclass"> </td>
 
-</tbody></table> 
+  </tr>
+
+</tbody></table>
 
 
 
@@ -150,9 +152,9 @@ body {
 
   <br>
 
-  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%"> 
+  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
 
-    
+
 
     <tbody><tr>
 
@@ -235,12 +237,12 @@ body {
       <td class="Partext1" bgcolor="#FFFFFF">&nbsp;</td>
     </tr>
 
-    <tr> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF" align="right" width="336">Consignment No  : </td> 
+      <td class="style3" bgcolor="#FFFFFF" align="right" width="336">Consignment No  : </td>
 
-      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no; ?></font>&nbsp;</td> 
-    </tr> 
+      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no; ?></font>&nbsp;</td>
+    </tr>
 
     <tr>
 
@@ -282,44 +284,46 @@ body {
       <td class="style3" bgcolor="#F3F3F3" align="right">Mode : </td>
 
       <td class="style3" bgcolor="#FFFFFF"><?php echo $mode; ?></td>
-    </tr> 
+    </tr>
 
-    <tr> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF" align="right">Pickup Date/Time  :</td> 
+      <td class="style3" bgcolor="#FFFFFF" align="right">Pickup Date/Time  :</td>
 
       <td class="style3" bgcolor="#FFFFFF">
 
         <?php echo $pick_date; ?> -<span class="gentxt">
+
     <?php echo $pick_time; ?>
         </span> </td> 
     </tr> 
 
-    <tr> 
 
-      <td class="style3" bgcolor="#FFFFFF" align="right">Status :</td> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status; ?></td> 
-    </tr> 
+      <td class="style3" bgcolor="#FFFFFF" align="right">Status :</td>
 
-     
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status; ?></td>
+    </tr>
 
-    <tr> 
 
-      <td class="style3" bgcolor="#FFFFFF" align="right" valign="top">Comments :</td> 
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments; ?></td> 
-    </tr> 
-  </tbody></table> 
+    <tr>
+
+      <td class="style3" bgcolor="#FFFFFF" align="right" valign="top">Comments :</td>
+
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments; ?></td>
+    </tr>
+  </tbody></table>
 
   <span class="Partext1"><br>
    </span><span class="Partext1"><br>
 
-  <br>  
+  <br>
 
   </span>
 
-  <form action="process.php?action=update-status" method="post" name="frmShipment" id="frmShipment"> 
+  <form action="process.php?action=update-status" method="post" name="frmShipment" id="frmShipment">
 
   <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
 
@@ -343,6 +347,7 @@ body {
       <td colspan="2" class="Partext1" bgcolor="#FFFFFF">
 
         <select name="OfficeName">
+
     <?php
     while ($data = mysqli_fetch_array($result_1)) {
         ?>
@@ -350,6 +355,7 @@ body {
         <?php
     }//while ?>
     </select>      </td>
+
     </tr>
 
     <tr>
@@ -357,13 +363,6 @@ body {
       <td class="Partext1" bgcolor="#FFFFFF" align="right">New Status: </td>
 
       <td class="Partext1" bgcolor="#FFFFFF" width="26%">
-
-      
-
-
-
-
-
 
 <select name="status">
 
@@ -391,7 +390,7 @@ body {
       <textarea name="comments" cols="40" rows="3" id="comments"></textarea></td>
     </tr>
 
-    
+
 
     <tr>
 
@@ -440,6 +439,7 @@ body {
 
 
 </body></html>
+
     <?php
 }
 ?>

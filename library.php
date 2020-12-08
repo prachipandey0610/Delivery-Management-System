@@ -1,5 +1,7 @@
 <?php
+
 require_once 'database.php';
+
 
 function assign_rand_value($num)
 {
@@ -119,6 +121,7 @@ function assign_rand_value($num)
 
 function get_rand_id($length)
 {
+
     if ($length>0) {
         $rand_id="";
         for ($i=1; $i<=$length; $i++) {
@@ -143,7 +146,9 @@ function checkUser($un, $pwd, $city)
         $dbPass = '';//'f056535ccc522c61c7b3f1924605d246faa0611d39cbf352';
         $dbName = 'courier_db';
 
+
         $dbConn1 = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName) or die('MySQL connect failed. ' . mysqli_error());
+
 
         $sql = "SELECT * FROM tbl_courier_officers WHERE officer_name ='". $un ."' AND off_pwd = '".$pwd."' AND office = '".$city."'";
             
@@ -168,3 +173,4 @@ function isUser()
         header('Location: login.php');
     }
 }
+

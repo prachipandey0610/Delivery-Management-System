@@ -22,7 +22,6 @@ isUser();
 <!--
 function Check_form() {
 
-
 // Check Password 
         if ( signupForm.txtp.value == "" )
         {
@@ -88,8 +87,6 @@ function Check_form() {
             return false;
         }
 
-    
-
 return true;
 }
 
@@ -102,21 +99,23 @@ return true;
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
+
     
 <?php require "header.php"; ?>
     </td>
+
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF"><table border="0" cellpadding="1" cellspacing="1" align="center" width="98%">
       <tbody><tr>
         <td class="Partext1">&nbsp;</td>
       </tr>
-      
+
       <tr>
         <td class="Partext1">&nbsp;</td>
         </tr>
-      
+
       <tr>
         <td height="25"><div class="headtext13" align="center"><strong>Change Admin Password </strong></div></td>
         </tr>
@@ -125,7 +124,7 @@ return true;
       </tr>
       <tr>
         <td><div align="center">
-           <form name="signupForm" id="signupForm" method="post" action="process.php?action=change-pass" onSubmit="return Check_form();"> 
+           <form name="signupForm" id="signupForm" method="post" action="process.php?action=change-pass" onSubmit="return Check_form();">
             <table border="0" cellpadding="0" cellspacing="0" align="center" width="60%">
               <tbody><tr>
                 <td width="18"><img src="images/boxtopleftcorner.gif" alt="" height="13" width="18"></td>

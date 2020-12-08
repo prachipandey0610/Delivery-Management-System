@@ -1,9 +1,5 @@
 <?php
-
-
-
-
-    session_start();
+session_start();
     
 require_once 'database.php';
  
@@ -16,12 +12,15 @@ if (isset($_POST['txtusername'])) {
     //echo $_POST['txtpassword'];
     //echo $_POST['OfficeName'];
     $error = checkUser($_POST['txtusername'], $_POST['txtpassword'], $_POST['OfficeName']);
+
 }//if
 
 require_once 'database.php';
 $sql = "SELECT DISTINCT off_name FROM tbl_offices";
+
         
 $result = mysqli_query($dbConn, $sql);
+
 /*
 echo "sql:";
 while($data = mysqli_fetch_array($result)){
@@ -72,15 +71,9 @@ function memloginvalidate()
 <tbody><tr>
 <td colspan="15"><img src="images/trheader.jpg" height="109" width="780"></td>
 </tr>
-
-        
-
-
-
-      
       <tr>
         <td><div align="center">
-          <span class="redtext"><strong>          </strong></span><br>  
+          <span class="redtext"><strong>          </strong></span><br>
               <br>
         </div>
           <table border="0" cellpadding="0" cellspacing="0" align="center" width="300">
@@ -137,6 +130,7 @@ function memloginvalidate()
                                 <td>&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:12px;">Office</font></td>
                                 <td>:</td>
                                 <td>
+
                                 <select name="OfficeName">
             <?php
             while ($data = mysqli_fetch_array($result)) {
@@ -154,10 +148,10 @@ function memloginvalidate()
                                 <td><input name="Submit" class="green-button" value="Login Now" type="submit" style="padding:5px 10px;font-weight:bold;"></td>
                               </tr>
                           </tbody>
+
                           </table>
                           </form>
                           </td>
-                        
                       </tr>
                     </tbody></table></td>
                   </tr>
@@ -185,7 +179,7 @@ function memloginvalidate()
 </tbody></table>
 </td>
       </tr>
-      
+
     </tbody></table></td>
   </tr>
 </tbody></table>

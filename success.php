@@ -6,4 +6,4 @@
 }
 -->
 </style>
-<span class="style1">SuccessFull  <?php echo $_GET['cid'];?></span> 
+<span class="style1">SuccessFull  <?php echo $_GET['cid'];?></span>

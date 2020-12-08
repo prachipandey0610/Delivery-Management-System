@@ -40,12 +40,12 @@ if ($no == 1) {
 
   </tr>
 
-  
+
 
   <tr>
 
     <td bgcolor="#FFFFFF">
-    
+
 <style type="text/css">
 .ds_box {
     background-color: #FFF;
@@ -121,17 +121,17 @@ body {
 
 
 
- 
 
-<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
 
-  <tbody><tr> 
+<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0">
 
-    <td id="ds_calclass"> </td> 
+  <tbody><tr>
 
-  </tr> 
+    <td id="ds_calclass"> </td>
 
-</tbody></table> 
+  </tr>
+
+</tbody></table>
 
 
 
@@ -151,9 +151,9 @@ body {
 
   <br>
 
-  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%"> 
+  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
 
-    
+
 
     <tbody><tr>
 
@@ -236,12 +236,12 @@ body {
       <td class="Partext1" bgcolor="#FFFFFF">&nbsp;</td>
     </tr>
 
-    <tr> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF" align="right" width="336">Consignment No  : </td> 
+      <td class="style3" bgcolor="#FFFFFF" align="right" width="336">Consignment No  : </td>
 
-      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no; ?></font>&nbsp;</td> 
-    </tr> 
+      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no; ?></font>&nbsp;</td>
+    </tr>
 
     <tr>
 
@@ -283,35 +283,35 @@ body {
       <td class="style3" bgcolor="#F3F3F3" align="right">Mode : </td>
 
       <td class="style3" bgcolor="#FFFFFF"><?php echo $mode; ?></td>
-    </tr> 
+    </tr>
 
-    <tr> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF" align="right">Pickup Date/Time  :</td> 
+      <td class="style3" bgcolor="#FFFFFF" align="right">Pickup Date/Time  :</td>
 
       <td class="style3" bgcolor="#FFFFFF">
 
         <?php echo $pick_date; ?> -<span class="gentxt">
+
         <?php echo $pick_time; ?>
         </span> </td> 
     </tr> 
 
-    <tr> 
 
-      <td class="style3" bgcolor="#FFFFFF" align="right">Status :</td> 
+      <td class="style3" bgcolor="#FFFFFF" align="right">Status :</td>
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status; ?></td> 
-    </tr> 
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status; ?></td>
+    </tr>
 
-     
 
-    <tr> 
 
-      <td class="style3" bgcolor="#FFFFFF" align="right" valign="top">Comments :</td> 
+    <tr>
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments; ?></td> 
-    </tr> 
-  </tbody></table> 
+      <td class="style3" bgcolor="#FFFFFF" align="right" valign="top">Comments :</td>
+
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments; ?></td>
+    </tr>
+  </tbody></table>
 
   <p>&nbsp;</p></td>
 
@@ -366,12 +366,12 @@ else {
 
   </tr>
 
-  
+
 
   <tr>
 
     <td bgcolor="#FFFFFF">
-    
+
 <style type="text/css">
 .ds_box {
     background-color: #FFF;
@@ -447,38 +447,29 @@ body {
 
 
 
- 
-
-<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
-
-  <tbody><tr> 
-
-    <td id="ds_calclass"> </td> 
-
-  </tr> 
-
-</tbody></table> 
 
 
+<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0">
+
+  <tbody><tr>
+
+    <td id="ds_calclass"> </td>
+
+  </tr>
+
+</tbody></table>
 
   <br>
 
-
-
-
   <br>
 
-  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%"> 
-
-    
+  <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
 
     <tbody><tr>
 
       <td class="Partext1" bgcolor="#FFFFFF" align="right"><div align="center">
 
   <span class="Partext1"><br>
-
-   
    </span>
 
   <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
@@ -489,14 +480,9 @@ body {
        </tr>
 
         </tbody></table>
-
-
 </td>
-
   </tr>
-
   <tr>
-
     <td><table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
@@ -504,19 +490,10 @@ body {
   </tr>
 </tbody></table>
 </td>
-
   </tr>
-
 </tbody></table>
-
-
-
-
-
 </body></html>
-
-
-
     <?php
+
 }//else
 ?>
