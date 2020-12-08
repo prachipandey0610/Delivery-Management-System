@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('database.php');
-require_once('library.php');
+require_once 'database.php';
+require_once 'library.php';
 
 isUser();
 ?>
@@ -22,73 +22,70 @@ isUser();
 <!--
 function Check_form() {
 
+// Check Password 
+        if ( signupForm.txtp.value == "" )
+        {
+            alert( "Kindly enter a password." );
+            signupForm.txtp.focus( );
+            return false;
+        }
 
-// Check Password
-		if ( signupForm.txtp.value == "" )
-		{
-			alert( "Kindly enter a password." );
-			signupForm.txtp.focus( );
-			return false;
-		}
-
-		if ( signupForm.txtp.value.length < 4 )
-		{
-			alert( "Password must be atleast 4 characters." );
-			signupForm.txtp.focus( );
-			return false;
-		}
-
-
-		if ( signupForm.txtp.value.length > 20 )
-		{
-		alert( "Password must be Max 20 characters." );
-		signupForm.txtp.focus( );
-		return false;
-		}
-
-		if ( signupForm.txtcp.value == "" )
-		{
-			alert( "Kindly enter a confirm password." );
-			signupForm.txtcp.focus( );
-			return false;
-		}
-
-		if ( signupForm. txtp.value != signupForm. txtcp.value )
-		{
-			alert( "Password and Confirm password must be same." );
-			signupForm.txtp.value = "";
-			signupForm.txtcp.value = "";
-
-			signupForm.txtp.focus( );
-
-			return false;
-		}
-
-		tmpPass = signupForm.txtp.value;
-
-		goodPasswd = 1;
-
-		for( var idx=0; idx< tmpPass.length; idx++ )
-		{
-			ch = tmpPass.charAt(idx);
-
-			if( !((ch>='a') && (ch<='z')) && !((ch>='A') && (ch<='Z')) && !((ch>=0) && (ch <=9)) )
-			{
-				goodPasswd = 0;
-				break;
-			}
-		}
-
-		if( goodPasswd ==0 )
-		{
-			alert( "Password must contains only letters and digits." );
-			signupForm. txtp.value="";
-			signupForm. txtcp.value="";
-			signupForm. txtp.focus();
-			return false;
-		}
+        if ( signupForm.txtp.value.length < 4 )
+        {
+            alert( "Password must be atleast 4 characters." );    
+            signupForm.txtp.focus( );
+            return false;
+        }
 
 
+        if ( signupForm.txtp.value.length > 20 )
+        {
+        alert( "Password must be Max 20 characters." );    
+        signupForm.txtp.focus( );
+        return false;
+        }
+
+        if ( signupForm.txtcp.value == "" )
+        {
+            alert( "Kindly enter a confirm password." );
+            signupForm.txtcp.focus( );
+            return false;
+        }
+
+        if ( signupForm. txtp.value != signupForm. txtcp.value )
+        {
+            alert( "Password and Confirm password must be same." );
+            signupForm.txtp.value = "";
+            signupForm.txtcp.value = "";
+
+            signupForm.txtp.focus( );
+
+            return false;
+        }
+
+        tmpPass = signupForm.txtp.value;
+
+        goodPasswd = 1;
+
+        for( var idx=0; idx< tmpPass.length; idx++ )
+        {
+            ch = tmpPass.charAt(idx);
+
+            if( !((ch>='a') && (ch<='z')) && !((ch>='A') && (ch<='Z')) && !((ch>=0) && (ch <=9)) )
+            {
+                goodPasswd = 0;
+                break;
+            }
+        }
+
+        if( goodPasswd ==0 )
+        {
+            alert( "Password must contains only letters and digits." );
+            signupForm. txtp.value="";
+            signupForm. txtcp.value="";
+            signupForm. txtp.focus();
+            return false;
+        }
 
 return true;
 }
@@ -103,8 +100,10 @@ return true;
   <tbody><tr>
     <td width="900">
 
-<?php include("header.php"); ?>
-	</td>
+    
+<?php require "header.php"; ?>
+    </td>
+
   </tr>
 
   <tr>

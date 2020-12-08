@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('database.php');
-require_once('library.php');
+require_once 'database.php';
+require_once 'library.php';
 isUser();
 $cid= (int)$_GET['cid'];
 
@@ -10,11 +10,12 @@ $sql = "SELECT *
 		WHERE cid = $cid";
 $sql_1 = "SELECT DISTINCT(off_name)
 		FROM tbl_offices";
-$result =  mysqli_query($dbConn,$sql);
-$result_1 =  mysqli_query($dbConn,$sql_1);
-while($data = mysqli_fetch_array($result)) {
-extract($data);
-?>
+
+$result =  mysqli_query($dbConn, $sql);
+$result_1 =  mysqli_query($dbConn, $sql_1);
+while ($data = mysqli_fetch_array($result)) {
+    extract($data); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -34,9 +35,9 @@ extract($data);
   <tbody><tr>
 
     <td width="900">
-<?php include("header.php"); ?>
+    <?php include "header.php"; ?>
 
-	</td>
+    </td>
 
   </tr>
 
@@ -48,55 +49,55 @@ extract($data);
 
 <style type="text/css">
 .ds_box {
-	background-color: #FFF;
-	border: 1px solid #000;
-	position: absolute;
-	z-index: 32767;
+    background-color: #FFF;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 32767;
 }
 .ds_tbl {
-	background-color: #FFF;
+    background-color: #FFF;
 }
 .ds_head {
-	background-color: #333;
+    background-color: #333;
 
-	color: #FFF;
+    color: #FFF;
 
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-	font-size: 13px;
+    font-size: 13px;
 
-	font-weight: bold;
+    font-weight: bold;
 
-	text-align: center;
+    text-align: center;
 
-	letter-spacing: 2px;
+    letter-spacing: 2px;
 
 }
 .ds_subhead {
-	background-color: #CCC;
-	color: #000;
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-	width: 32px;
+    background-color: #CCC;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 32px;
 }
 .ds_cell {
-	background-color: #EEE;
-	color: #000;
-	font-size: 13px;
+    background-color: #EEE;
+    color: #000;
+    font-size: 13px;
 
-	text-align: center;
+    text-align: center;
 
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 
-	padding: 5px;
+    padding: 5px;
 
-	cursor: pointer;
+    cursor: pointer;
 
 }
 .ds_cell:hover {
-	background-color: #F3F3F3;
+    background-color: #F3F3F3;
 } /* This hover code won't work for IE */
 </style>
 <style type="text/css">
@@ -105,13 +106,13 @@ extract($data);
 
 body {
 
-	margin-left: 0px;
+    margin-left: 0px;
 
-	margin-top: 0px;
+    margin-top: 0px;
 
-	margin-right: 0px;
+    margin-right: 0px;
 
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -187,15 +188,15 @@ body {
             <td><div align="left" class="style3">Shipper Address : </div></td>
 
             <td><div align="left" class="style3">
-			<?php echo $s_add; ?>
-			</div></td>
+    <?php echo $s_add; ?>
+            </div></td>
           </tr>
         </tbody></table>
 
       </div></td>
 
       <td class="Partext1" bgcolor="#FFFFFF">
-	  <div align="center">
+      <div align="center">
 
         <table border="0" cellpadding="1" cellspacing="1" width="80%">
 
@@ -212,7 +213,7 @@ body {
             <td class="style3"><div align="left">Receiver Phone : </div></td>
 
             <td class="style3"><div align="left">
-			<?php echo $r_phone; ?>
+    <?php echo $r_phone; ?>
             </div></td>
           </tr>
 
@@ -221,7 +222,7 @@ body {
             <td class="style3"><div align="left">Receiver Address : </div></td>
 
             <td class="style3"><div align="left">
-			<?php echo $r_add; ?>
+    <?php echo $r_add; ?>
             </div></td>
           </tr>
         </tbody></table>
@@ -292,9 +293,11 @@ body {
       <td class="style3" bgcolor="#FFFFFF">
 
         <?php echo $pick_date; ?> -<span class="gentxt">
-<?php echo $pick_time; ?>
-        </span> </td>
-    </tr>
+
+    <?php echo $pick_time; ?>
+        </span> </td> 
+    </tr> 
+
 
     <tr>
 
@@ -344,14 +347,15 @@ body {
       <td colspan="2" class="Partext1" bgcolor="#FFFFFF">
 
         <select name="OfficeName">
-			<?php
-			while($data = mysqli_fetch_array($result_1)){
-			?>
-			<option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-			<?php
-			}//while
-			?>
-	</select>      </td>
+
+    <?php
+    while ($data = mysqli_fetch_array($result_1)) {
+        ?>
+            <option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
+        <?php
+    }//while ?>
+    </select>      </td>
+
     </tr>
 
     <tr>
@@ -359,13 +363,6 @@ body {
       <td class="Partext1" bgcolor="#FFFFFF" align="right">New Status: </td>
 
       <td class="Partext1" bgcolor="#FFFFFF" width="26%">
-
-
-
-
-
-
-
 
 <select name="status">
 
@@ -382,7 +379,7 @@ body {
 <br></td>
 
       <td class="Partext1" bgcolor="#FFFFFF" width="58%"><div align="center">
-	  <a href="process.php?action=delivered&cid=<?php echo $cid; ?>">Marked this shipment as to be <span class="style1">DELIVERED </span></a><span class="style1"></span></div></td>
+      <a href="process.php?action=delivered&cid=<?php echo $cid; ?>">Marked this shipment as to be <span class="style1">DELIVERED </span></a><span class="style1"></span></div></td>
     </tr>
 
     <tr>
@@ -390,7 +387,7 @@ body {
       <td bgcolor="#FFFFFF" align="right"><span class="Partext1">Comments:</span></td>
 
       <td colspan="2" class="Partext1" bgcolor="#FFFFFF">
-	  <textarea name="comments" cols="40" rows="3" id="comments"></textarea></td>
+      <textarea name="comments" cols="40" rows="3" id="comments"></textarea></td>
     </tr>
 
 
@@ -442,5 +439,7 @@ body {
 
 
 </body></html>
-<?php }
+
+    <?php
+}
 ?>

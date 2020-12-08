@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once('database.php');
-require_once('library.php');
+require_once 'database.php';
+require_once 'library.php';
 isUser();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -18,17 +18,17 @@ isUser();
 </style>
 </head>
 <body>
-<?php include("header.php"); ?>
+<?php require "header.php"; ?>
 <script language="javascript">
 function validate()
   {
  if (document.form1.track.value == "" )
-		 {
-			alert("Consignment No is required.");
-			document.form1.track.focus( );
-			return false;
-		}
-	}
+         {
+            alert("Consignment No is required.");
+            document.form1.track.focus( );
+            return false;
+        }
+    }
 </script>
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
@@ -69,7 +69,7 @@ function validate()
 
               </tr>
               <tr bgcolor="EFEFEF">
-			  <form action="search-courier.php" method="post">
+              <form action="search-courier.php" method="post">
                 <td valign="top"><div align="right">Enter Consignment number </div></td>
                 <td valign="top"><div align="left">
                   <input name="Consignment" class="gentxt" id="track" maxlength="50" type="text">
@@ -81,7 +81,7 @@ function validate()
                   <input name="Submit" class="gentxt" value="Submit" type="submit">
                 </div></td>
               </form>
-			  </tr>
+              </tr>
               <tr bgcolor="EFEFEF">
                 <td colspan="2" class="TrackNormalBlue" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
               </tr>
