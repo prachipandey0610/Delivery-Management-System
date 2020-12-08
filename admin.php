@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('library.php');
+require_once 'library.php';
 isUser();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -13,10 +13,10 @@ isUser();
 <body>
 
 <?php
-include("header.php");
+require "header.php";
 ?>
 
-	</td>
+    </td>
   </tr>
   
   <tr>
@@ -47,11 +47,11 @@ include("header.php");
   </tr>
   <tr>
     <td>
-	<table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
     <td bgcolor="#2284d5" width="304">
-	</td>
+    </td>
   </tr>
 </tbody></table>
 </td>
