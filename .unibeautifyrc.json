@@ -1,0 +1,19 @@
+{
+  "Markdown": {
+    "beautifiers": [
+      "Prettier"
+    ]
+  },
+  "PHP": {
+    "beautifiers": [
+      "PHP-CS-Fixer",
+      "PHP_CodeSniffer"
+    ]
+  },
+  "SQL": {
+    "beautifiers": [
+      "sqlformat"
+    ],
+    "indent_size": 4
+  }
+}
