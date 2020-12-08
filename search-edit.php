@@ -59,14 +59,14 @@ function validate()
               <tr>
                 <td colspan="2" class="bottom" valign="middle">&nbsp;</td>
               </tr>
-              
+
               <tr bgcolor="EFEFEF">
                 <td colspan="2" class="aalpha" bgcolor="#FFFFFF" height="34" valign="top"><div class="gentxt" align="center"><strong>Key in the Shipment Number to MODIFY the data. This is helpful if you have made spelling errors while adding the shipment.</strong><br>
                   <br>
                 </div></td>
               </tr>
               <tr bgcolor="EFEFEF">
-                
+
               </tr>
               <tr bgcolor="EFEFEF">
 			  <form action="search-courier.php" method="post">
@@ -85,7 +85,7 @@ function validate()
               <tr bgcolor="EFEFEF">
                 <td colspan="2" class="TrackNormalBlue" bgcolor="#FFFFFF" valign="top">&nbsp;</td>
               </tr>
-            
+
           </tbody></table>
         </div></td>
       </tr>

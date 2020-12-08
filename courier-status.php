@@ -32,7 +32,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-	
+
 <table border="0" cellpadding="0" cellspacing="0" width="900">
 <tbody><tr>
 <td>
@@ -44,7 +44,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 </tbody></table>
 	</td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF"><table border="0" cellpadding="1" cellspacing="1" align="center" width="98%">
       <tbody><tr>
@@ -55,23 +55,23 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
           <h3><strong>Tracking Shipment </strong></h3>
         </div></td>
       </tr>
-      
+
       <tr>
         <td class="Partext1"><br>
-	  
 
 
 
 
- 
-  
+
+
+
           <table border="0" cellpadding="1" cellspacing="1" height="30" align="center" width="73%">
           <tbody><tr>
             <td><div onClick="MM_openBrWindow('printview1.php?id=2233','pv','scrollbars=yes,resizable=yes,width=600,height=500')" align="right"><a href="#" class="gentxt">Printable Version </a></div></td>
           </tr>
         </tbody></table>
-          
-        
+
+
 		  <table class="blackbox" border="0" cellpadding="1" cellspacing="1" align="center" width="550">
             <tbody><tr>
               <td bgcolor="#FEE9A9" height="27"><strong>&nbsp;Consignment No</strong> : 2233</td>
@@ -139,7 +139,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
                 <tr>
                   <td colspan="4" bgcolor="#F0F0F0" height="1"></td>
                   </tr>
-                
+
 				 <tr>
 				   <td><strong>Expected Delivery Date</strong></td>
 				   <td colspan="3">25/01/2011</td>
@@ -147,16 +147,16 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 				 <tr>
                   <td colspan="4" bgcolor="#F0F0F0" height="1"></td>
                   </tr>
-				
-				
-				
+
+
+
 				              </tbody></table>
                 <br></td>
             </tr>
           </tbody></table>
 		  <p>
-		    		    
-		    
+
+
 		    		    </p>
 		  <table class="blackbox" cellpadding="2" cellspacing="0" align="center" width="90%">
             <tbody><tr>
@@ -167,8 +167,8 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
               <td bgcolor="#D9F2FF"><div align="center">Comments</div></td>
             </tr>
                                     </tbody></table>
-	  
-		  
+
+
           <table cellpadding="2" cellspacing="2" align="center" width="90%">
             <tbody><tr>
               <td bgcolor="#FFFFFF" align="right" width="29%"><div align="center"></div></td>

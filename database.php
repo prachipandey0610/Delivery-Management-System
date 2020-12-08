@@ -14,8 +14,6 @@ function dbQuery($sql)
 {
 	global $dbConn;
   $result = mysqli_query($dbConn,$sql) ;
-
-
 	return $result;
 }
 

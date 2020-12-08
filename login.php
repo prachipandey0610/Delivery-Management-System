@@ -4,23 +4,23 @@
 
 
 	session_start();
-	
+
 require_once('database.php');
- 
+
 require_once('library.php');
 
 $error = "";
 if(isset($_POST['txtusername'])){
 	//echo "data";
 	//echo $_POST['txtusername'];
-	//echo $_POST['txtpassword']; 
+	//echo $_POST['txtpassword'];
 	//echo $_POST['OfficeName'];
 	$error = checkUser($_POST['txtusername'],$_POST['txtpassword'],$_POST['OfficeName']);
 }//if
 
 require_once('database.php');
 $sql = "SELECT DISTINCT off_name FROM tbl_offices";
-		
+
 $result = mysqli_query($dbConn,$sql);
 /*
 echo "sql:";
@@ -73,14 +73,14 @@ function memloginvalidate()
 <td colspan="15"><img src="images/trheader.jpg" height="109" width="780"></td>
 </tr>
 
-		
 
 
 
-      
+
+
       <tr>
         <td><div align="center">
-          <span class="redtext"><strong>          </strong></span><br>  
+          <span class="redtext"><strong>          </strong></span><br>
               <br>
         </div>
           <table border="0" cellpadding="0" cellspacing="0" align="center" width="300">
@@ -138,11 +138,11 @@ function memloginvalidate()
                                 <td>:</td>
                                 <td>
 								<select name="OfficeName">
-			<?php 
+			<?php
 			while($data = mysqli_fetch_array($result)){
 			?>
 			<option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-			<?php 
+			<?php
 			}//while
 			?>
 			</select>
@@ -157,7 +157,7 @@ function memloginvalidate()
 						  </table>
 						  </form>
 						  </td>
-                        
+
                       </tr>
                     </tbody></table></td>
                   </tr>
@@ -185,7 +185,7 @@ function memloginvalidate()
 </tbody></table>
 </td>
       </tr>
-      
+
     </tbody></table></td>
   </tr>
 </tbody></table>

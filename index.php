@@ -68,15 +68,15 @@
         <td height="221" width="1%"><img src="home_files/l1.gif" height="292" width="1"></td>
         <td class="aalpha" width="54%"><p class="navi" align="justify"><strong>Courier Management System  </strong> is the simplest solution for <strong>Courier &amp; Cargo Tracking</strong> Business. If you need to enable Tracking Option in your existing or new website, this is quickest Software Solution. </p>
           <p class="navi" align="justify">You can get install it yourselves or  We do the installation and brand it in your name on your hosting ! </p>
-          <p class="navi" align="justify">The Courier Software is Very 
-easy to setup and manage powerful administration. Provide online 
-tracking system of consignment and shipping detail for International or 
+          <p class="navi" align="justify">The Courier Software is Very
+easy to setup and manage powerful administration. Provide online
+tracking system of consignment and shipping detail for International or
 domestic shipping. </p>
           <p class="navi" align="justify">We have made this script, a very simple one, which means SIMPLE  ! Read More on the Features<strong>.</strong></p>
           <p class="navi" align="justify"><strong>Our CEO quotes : </strong></p>
-          <p class="navi" align="justify">" We decided to develop this 
+          <p class="navi" align="justify">" We decided to develop this
 small application for the simple reason being, not many such scripts are
- available in the market and few of such that exist are vast and 
+ available in the market and few of such that exist are vast and
 complex" </p></td>
         <td class="aalpha" width="2%"><div align="center"><img src="home_files/l2.gif" height="292" width="1"></div></td>
         <td class="aalpha" width="21%"><table border="0" align="center" width="89%">
@@ -136,7 +136,7 @@ complex" </p></td>
   <tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
     <td bgcolor="#2284d5" width="304"><p class="lowerstyle">
-    
+
     </p>
       <p class="lowerstyle">&nbsp;</p></td>
   </tr>

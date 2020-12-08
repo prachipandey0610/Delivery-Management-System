@@ -7,7 +7,7 @@ isUser();
 
 $sql = "SELECT *
 		FROM tbl_offices";
-$result = mysqli_query($dbConn,$sql);		
+$result = mysqli_query($dbConn,$sql);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -30,7 +30,7 @@ $result = mysqli_query($dbConn,$sql);
 <?php include("header.php"); ?>
 	</td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF">
 	<script language="JavaScript">
@@ -42,7 +42,7 @@ if (checkflag == "false")
 	for (i = 0; i < field.length; i++) {
 	if(field[i].type=="checkbox" && field[i].name!="chkAll")
 	{
-	field[i].checked=true;	
+	field[i].checked=true;
 	}
 	}
 	checkflag = "true";
@@ -68,7 +68,7 @@ function confirmDel(field,msg)
 	count++;
 	}
 	}
-	
+
 	if(count == 0)
 	{
 		alert("Select any one record to delete!");
@@ -89,7 +89,7 @@ function confirmDel(field,msg)
     </tr>
   </tbody></table>
 
- 
+
   <table border="0" cellpadding="1" cellspacing="1" align="center" width="95%">
     <tbody>
 	<tr>
@@ -107,12 +107,12 @@ function confirmDel(field,msg)
       <td class="newtext" bgcolor="#EDEDED" width="15%">Contact Person</td>
     </tr>
 	<?php
-	
+
 	while($data = mysqli_fetch_array($result)){
-	extract($data);	
+	extract($data);
 	?>
       <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF" style="height:20px;">
-	
+
       <td class="gentxt"><?php echo $off_name; ?></td>
       <td class="gentxt"><?php echo $address; ?></td>
       <td class="gentxt"><?php echo $city; ?></td>
@@ -125,7 +125,7 @@ function confirmDel(field,msg)
 	?>
 	  </tbody></table>
   <br>
-	
+
     </td>
   </tr>
   <tr>
