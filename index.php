@@ -138,7 +138,7 @@ complex"
 
 <!-- New text -->
 <strong>This project deals with the ‘Courier Service management’.</strong> <br><br>
-The system will be used for day to day activities like out return, company details, hub rates ,booking, non delivery, and pickup centers.<br><br>
+The system will be used for day to day activities like out return, company details, hub rates, booking, non delivery and pickup centers.<br><br>
 
 Actually It is not easy to do this process manually because it would become very hectic.<br><br>
 
