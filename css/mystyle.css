@@ -1,7 +1,7 @@
 /* CSS Document */
 
 .blackbox {
-		
+
 		border: 1px solid #EBEBEB;
 		padding: 0px;
 }
@@ -10,7 +10,9 @@ body{
 font-family:Verdana, Arial, Helvetica, sans-serif;
 font-size:12px;
 
-background-color:#0a2f5b;
+background-color:#64686B;
+
+/*blue - #0a2f5b*/
 
 
 
@@ -48,14 +50,14 @@ background-color:#0a2f5b;
 font-family: sans-serif, arial, helvetica;
 font-size:12px;
 color:#000000;
-}	
+}
 
 
 .redtext {
 font-family: sans-serif, arial, helvetica;
 font-size:12px;
 color:#FF0000;
-}	
+}
 
 input.text {
 	width: 200px;
