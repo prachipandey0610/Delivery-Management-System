@@ -1,8 +1,32 @@
 {
+  "CSS": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify",
+      "CSScomb"
+    ],
+    "end_with_newline": true,
+    "indent_size": 4,
+    "indent_style": "space",
+    "max_preserve_newlines": 1,
+    "newline_between_rules": true,
+    "no_leading_zero": true,
+    "pragma_insert": false,
+    "pragma_require": false,
+    "preserve_newlines": false,
+    "quotes": "double",
+    "selector_separator_newline": false,
+    "wrap_line_length": 0
+  },
   "Markdown": {
     "beautifiers": [
       "Prettier"
-    ]
+    ],
+    "pragma_insert": false,
+    "pragma_require": false,
+    "wrap_line_length": 0,
+    "wrap_prose": "never"
   },
   "PHP": {
     "beautifiers": [
@@ -14,6 +38,6 @@
     "beautifiers": [
       "sqlformat"
     ],
-    "indent_size": 4
+    "indent_size": 2
   }
 }
