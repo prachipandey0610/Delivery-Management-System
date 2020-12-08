@@ -138,7 +138,6 @@ function updateStatus($dbConn)
     mysqli_query($dbConn, $sql_1);
     
     header('Location: update-success.php');
-
 }//addNewOffice
 
 

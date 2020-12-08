@@ -494,6 +494,5 @@ body {
 </tbody></table>
 </body></html>
     <?php
-
 }//else
 ?>

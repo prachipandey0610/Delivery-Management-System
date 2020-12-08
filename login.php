@@ -12,7 +12,6 @@ if (isset($_POST['txtusername'])) {
     //echo $_POST['txtpassword'];
     //echo $_POST['OfficeName'];
     $error = checkUser($_POST['txtusername'], $_POST['txtpassword'], $_POST['OfficeName']);
-
 }//if
 
 require_once 'database.php';
