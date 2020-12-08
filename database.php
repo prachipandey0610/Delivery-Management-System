@@ -12,20 +12,16 @@ $dbConn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName) or die('MySQL conne
 
 function dbQuery($sql)
 {
-
     global $dbConn;
     $result = mysqli_query($dbConn, $sql);
     return $result;
-
 }
 
 function dbAffectedRows()
 {
-
     global $dbConn;
     
     return mysqli_affected_rows($dbConn);
-
 }
 
 function dbFetchArray($result, $resultType = MYSQL_NUM)

@@ -121,7 +121,6 @@ function assign_rand_value($num)
 
 function get_rand_id($length)
 {
-
     if ($length>0) {
         $rand_id="";
         for ($i=1; $i<=$length; $i++) {
@@ -173,4 +172,3 @@ function isUser()
         header('Location: login.php');
     }
 }
-
