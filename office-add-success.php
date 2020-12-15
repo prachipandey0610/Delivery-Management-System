@@ -9,16 +9,17 @@
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-<?php require "header.php"; ?>
-    </td>
+<?php include("header.php");
+?>
+	</td>
   </tr>
-
+  
   <tr>
     <td bgcolor="#FFFFFF"><table border="0" cellpadding="1" cellspacing="1" align="center" width="98%">
       <tbody><tr>
         <td class="Partext1">&nbsp;</td>
       </tr>
-
+      
       <tr>
         <td class="Partext1"><div align="center">
           <table cellpadding="4" cellspacing="0" align="center" width="70%">
@@ -26,14 +27,14 @@
 function validate()
   {
  if (form.Consignment.value == "" )
-         {
-            alert("Consignment No is required.");
-            form.track.focus( );
-            return false;
-        }
-    }
+		 {
+			alert("Consignment No is required.");
+			form.track.focus( );
+			return false;
+		}
+	}
 </script>
-
+            
               <tbody><tr>
                 <td class="TrackTitle" valign="top"><div class="newtext" align="center"></div></td>
               </tr>
@@ -52,8 +53,8 @@ function validate()
       <tr>
         <td class="Partext1">&nbsp;</td>
         </tr>
-
-
+      
+      
       <tr>
         <td>&nbsp;</td>
         </tr>

@@ -36,7 +36,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
 <table border="0" cellpadding="0" cellspacing="0" width="900">
 <tbody><tr>
 <td>
-<img src="images/trheader.jpg" height="109" width="900"></td>
+<img src="images/trheader.jpeg" height="109" width="900"></td>
 </tr>
 <tr>
 <td bgcolor="#FFCC00">&nbsp;</td>
