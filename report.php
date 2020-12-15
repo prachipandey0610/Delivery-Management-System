@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once('library.php');
+require_once 'library.php';
 isUser();
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -11,7 +11,7 @@ isUser();
 <link href="css/mystyle.css" rel="stylesheet" type="text/css">
 <style type="text/css">
 <!--
-.style110 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 11px;	color: #000000;
+.style110 {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 11px;    color: #000000;
 }
 .style2 {color: #FFFFFF}
 -->
@@ -22,10 +22,10 @@ isUser();
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="780">
   <tbody><tr>
     <td width="780">
-<?php include("header.php");
-?>	
+<?php require "header.php";
+?>    
 
-	</td>
+    </td>
   </tr>
   
   <tr>

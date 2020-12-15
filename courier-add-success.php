@@ -9,8 +9,8 @@
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-	<?php include("header.php");
-?>	</td>
+    <?php require "header.php";
+    ?>    </td>
   </tr>
   
   <tr>
@@ -26,12 +26,12 @@
 function validate()
   {
  if (form.Consignment.value == "" )
-		 {
-			alert("Consignment No is required.");
-			form.track.focus( );
-			return false;
-		}
-	}
+         {
+            alert("Consignment No is required.");
+            form.track.focus( );
+            return false;
+        }
+    }
 </script>
             
               <tbody><tr>
@@ -42,7 +42,7 @@ function validate()
               </tr>
               <tr bgcolor="EFEFEF">
                 <td valign="top">Courier is added successfully.<br/>
-				</td>
+                </td>
               </tr>
               <tr bgcolor="EFEFEF">
                 <td class="TrackNormalBlue" bgcolor="#FFFFFF" valign="top">&nbsp;</td>

@@ -1,8 +1,8 @@
 <style type="text/css">
 <!--
 .style1 {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 -->
 </style>

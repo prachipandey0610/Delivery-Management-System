@@ -52,14 +52,14 @@ if (isset($_SESSION['user_type'])) { // && $_SESSION['user_type'] == 'admin-role
 
     <td bgcolor="#E2E2E2" width="100"><div align="center"><a href="add-office.php" class="headtext13">Add New Office</a></div></td>
     <td bgcolor="#E2E2E2" width="10">|</td>
-	<td bgcolor="#E2E2E2" width="162"><div align="center"><a href="manager-list.php" class="headtext13">Manager Details</a> </div></td>
+    <td bgcolor="#E2E2E2" width="162"><div align="center"><a href="manager-list.php" class="headtext13">Manager Details</a> </div></td>
     <td bgcolor="#E2E2E2" width="7">|</td>
     <td bgcolor="#E2E2E2" width="125"><div align="center"><a href="add-new-officer.php" class="headtext13">Add New Manager</a></div></td>
   </tr>
 </tbody>
 </table>
-<?php
-    } 
+    <?php
+}
 ?>
 <table border="0" cellpadding="0" cellspacing="0" width="900">
   <tbody><tr style="height:25px;">
