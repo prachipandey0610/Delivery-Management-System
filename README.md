@@ -37,4 +37,5 @@ Here, we will demonstrate using MAMP server.
 
 ### Launching the Website
 
-Type `localhost` in the URL bar and the website should be up & running! Or click [here](localhost)
+Type `localhost` in the URL bar and the website should be up & running!
+Or click [here](localhost)

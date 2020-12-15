@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once 'database.php';
-require_once 'library.php';
+require_once('database.php');
+require_once('library.php');
 isUser();
 
 $sql = "SELECT DISTINCT(off_name)
@@ -18,48 +18,48 @@ $result = dbQuery($sql);
 <style type="text/css">
 
 .ds_box {
-    background-color: #FFF;
-    border: 1px solid #000;
-    position: absolute;
-    z-index: 32767;
+	background-color: #FFF;
+	border: 1px solid #000;
+	position: absolute;
+	z-index: 32767;
 }
 
 .ds_tbl {
-    background-color: #FFF;
+	background-color: #FFF;
 }
 
 .ds_head {
-    background-color: #333;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
+	background-color: #333;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
 }
 
 .ds_subhead {
-    background-color: #CCC;
-    color: #000;
-    font-size: 12px;
-    font-weight: bold;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 32px;
+	background-color: #CCC;
+	color: #000;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 32px;
 }
 
 .ds_cell {
-    background-color: #EEE;
-    color: #000;
-    font-size: 13px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5px;
-    cursor: pointer;
+	background-color: #EEE;
+	color: #000;
+	font-size: 13px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px;
+	cursor: pointer;
 }
 
 .ds_cell:hover {
-    background-color: #F3F3F3;
+	background-color: #F3F3F3;
 } /* This hover code won't work for IE */
 
 </style>
@@ -67,20 +67,20 @@ $result = dbQuery($sql);
 <style type="text/css">
 <!--
 body {
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
 -->
-</style>
+</style> 
 
 <style type="text/css">
 <!--
 .style1 {
-    font-size: 15px;
-    font-weight: bold;
-    color: #003399;
+	font-size: 15px;
+	font-weight: bold;
+	color: #003399;
 }
 -->
 </style>
@@ -114,32 +114,31 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
-<?php require "header.php"; ?>
+<?php include("header.php");
+?>
 
-    </td>
+	</td>
   </tr>
-
+  
   <tr>
     <td bgcolor="#FFFFFF">
-
-    
-    
+	
+	
 <table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
   <tbody><tr> 
     <td id="ds_calclass"> </td> 
   </tr> 
 </tbody></table> 
-
  <br/>
   <table border="0" align="center" width="100%">
     <tbody>
-    <tr>
+	<tr>
       <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add New Office Manager </span></td>
     </tr>
-
+    
   </tbody>
   </table>
-<form action="process.php?action=add-manager" method="post" name="frmShipment" >
+<form action="process.php?action=add-manager" method="post" name="frmShipment" > 
 <div class="gentxt" align="right">
 <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
 <tbody><tr>
@@ -174,7 +173,7 @@ function MM_validateForm() { //v4.0
             <td class="TrackMediumBlue" align="right" width="138">Manager  Name   :</td>
             <td width="13">&nbsp;</td>
             <td width="477">
-            <input name="ManagerName" type="TEXT" id="ManagerName" size="40"  maxlength="100">                </td>
+			<input name="ManagerName" type="TEXT" id="ManagerName" size="40"  maxlength="100">                </td>
           </tr>
           <tr>
             <td class="TrackMediumBlue" align="right">Password   :</td>
@@ -202,26 +201,26 @@ function MM_validateForm() { //v4.0
             <td class="TrackMediumBlue" align="right">Office Name : </td>
             <td>&nbsp;</td>
             <td>
-
-            <select name="OfficeName">
-            <?php
-            while ($data = dbFetchAssoc($result)) {
-                ?>
-            <option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-                <?php
-            }//while
-            ?>
-            </select>
-            </td>
-
+			<select name="OfficeName">
+			<?php
+ while ($data = dbFetchAssoc($result)) {
+    ?>
+			<option value="<?php echo $data['off_name'];
+     ?>"><?php echo $data['off_name'];
+     ?></option>
+			<?php
+     } //while
+ ?>
+			</select>
+			</td>
           </tr>
-
+          
           <tr>
             <td class="TrackMediumBlue" align="right">&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
           </tr>
-
+          
           <tr>
             <td align="right">&nbsp;</td>
             <td>&nbsp;</td>
@@ -242,13 +241,13 @@ function MM_validateForm() { //v4.0
   </tr>
 </tbody></table>
 <br>
-</form>
+</form> 
 
-    </td>
+	</td>
   </tr>
   <tr>
     <td>
-    <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
+	<table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
     <td bgcolor="#2284d5" width="304"><div align="right"></div></td>
