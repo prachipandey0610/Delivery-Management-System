@@ -1,43 +1,55 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Delivery Management System</title>
-<meta name="description" content="A Simple Solution to enable Tracking in your Existing Website.">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="css/aalpha.css" rel="stylesheet" type="text/css">
 
-<style type="text/css">
-<!--
-.style1 {color: #CCCCCC}
--->
-</style>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Delivery Management System</title>
+    <meta name="description" content="A Simple Solution to enable Tracking in your Existing Website.">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <link href="css/aalpha.css" rel="stylesheet" type="text/css">
+
+    <style type="text/css">
+        <!--
+        .style1 {
+            color: #CCCCCC
+        }
+
+        -->
+    </style>
 </head>
 
 <body>
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
-  <tbody><tr>
-    <td width="900"><img src="images/trheader.jpeg" ></td>
-  </tr>
-  <tr>
-    <td><table border="0" cellpadding="0" cellspacing="0" width="900">
-      <tbody><tr>
-        <td bgcolor="#5F8AB8">&nbsp;</td>
-      </tr>
-    </tbody></table></td>
-  </tr>
-</tbody></table>
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
-  <tbody><tr>
-    <td bgcolor="#FFFFFF" width="900"><table border="0" align="center" width="99%">
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
+        <tbody>
+            <tr>
+                <td width="900"><img src="images/trheader.jpeg"></td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="900">
+                        <tbody>
+                            <tr>
+                                <td bgcolor="#5F8AB8">&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
+        <tbody>
+            <tr>
+                <td bgcolor="#FFFFFF" width="900">
+                    <table border="0" align="center" width="99%">
 
-      <tbody>
-      <tr>
-        <td width="22%">
-        <table border="0" align="center" width="185">
-          <tbody>
+                        <tbody>
+                            <tr>
+                                <td width="22%">
+                                    <table border="0" align="center" width="185">
+                                        <tbody>
 
-          <!--left border removed
+                                            <!--left border removed
 
           <tr bgcolor="#EFF7FC">
             <td class="aalpha" bgcolor="#0066CC" height="19" width="179">
@@ -102,132 +114,110 @@
             </td>
           </tr>
           -->
-        </tbody></table>
-<!-- commenting out the mysql & php part
-          <p align="center"><img src="home_files/mysql.gif" height="31" width="89"></p>
-          <p align="center"><img src="home_files/php_logo.png" height="54" width="102"></p>
--->
-          <!-- #EndLibraryItem --></td>
+                                        </tbody>
+                                    </table>
 
-        <td height="221" width="1%"><img src="home_files/l1.gif" height="292" width="1"></td>
-        <td class="aalpha" width="54%">
+                                    <!-- #EndLibraryItem -->
+                                </td>
 
-        <p class="navi" align="justify">
-<!-- old paragraph
-        <strong>Delivery Management System</strong> is the simplest solution for
+                                <td height="221" width="1%"><img src="home_files/l1.gif" height="292" width="1"></td>
+                                <td class="aalpha" width="54%">
 
-        <strong>Courier &amp; Cargo Tracking</strong>
+                                    <p class="navi" align="justify">
 
-        Business. If you need to enable Tracking Option in your existing or new website, this is quickest Software Solution. </p>
 
-          <p class="navi" align="justify">You can get install it yourselves or  We do the installation and brand it in your name on your hosting ! </p>
+                                        <!-- New text -->
+                                        <strong>This project deals with the ‘Delivery Management System’.</strong> <br><br>
+                                        The system will be used for day to day activities like out return, company details, hub rates, booking, non delivery and pickup centers.<br><br>
 
-          <p class="navi" align="justify">The Delivery Software is Very easy to setup and manage powerful administration. Provide online
-tracking system of consignment and shipping detail for International or
-domestic shipping. </p>
+                                        Actually It is not easy to do this process manually because it would become very hectic.<br><br>
 
-          <p class="navi" align="justify">We have made this script, a very simple one, which means SIMPLE  ! Read More on the Features<strong>.</strong></p>
+                                        Hence it is recommended to automate the process by developing the relevant software as the world is moving from manual working to information and technology era where computerization becomes important in all walks of life.<br>
+                                    </p>
 
-          <p class="navi" align="justify"><strong>Our CEO quotes : </strong></p>
+                                </td>
 
-          <p class="navi" align="justify">" We decided to develop this
-small application for the simple reason being, not many such scripts are
- available in the market and few of such that exist are vast and
-complex"
--->
+                                <td class="aalpha" width="2%">
+                                    <div align="center">
+                                        <img src="home_files/l2.gif" height="292" width="1">
+                                    </div>
+                                </td>
 
-<!-- New text -->
-<strong>This project deals with the ‘Delivery Management System’.</strong> <br><br>
-The system will be used for day to day activities like out return, company details, hub rates, booking, non delivery and pickup centers.<br><br>
+                                <td class="aalpha" width="21%">
+                                    <table border="0" align="center" width="89%">
 
-Actually It is not easy to do this process manually because it would become very hectic.<br><br>
+                                        <tbody>
 
-Hence it is recommended to automate the process by developing the relevant software as the world is moving from manual working to information and technology era where computerization becomes important in all walks of life.<br>
-</p>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <table border="0" align="center" width="90%">
+                                        <tbody>
+                                            <tr bgcolor="#EFF7FC">
+                                                <td class="aalpha" bgcolor="#EFF7FC" height="19">
+                                                    <div align="center">
+                                                        <p><strong> Status Check </strong>:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#EFF7FC">
+                                                <td class="aalpha" bgcolor="#FFFFFF" height="19">
+                                                    <div align="center"><a href="track-status.php" target="_self">Click Here </a> </div>
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#EFF7FC">
+                                                <td class="aalpha" bgcolor="#EFF7FC" height="19">
+                                                    <div align="center">
+                                                        <p><strong> ADMIN Login </strong>:</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr bgcolor="#EFF7FC">
+                                                <td class="aalpha" bgcolor="#FFFFFF" height="19">
+                                                    <div align="center"><a href="login.php" target="_self">Click here </a> </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table border="0" align="center" width="100%">
+                        <tbody>
+                            <tr bgcolor="#EFF7FC">
+                                <td class="aalpha" bgcolor="#FFFFFF" height="19">
+                                    <div class="lowerstyle style1" align="center"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
+        <tbody>
+            <tr>
+                <td colspan="2" class="aalpha" bgcolor="#5F8AB8" height="25">
+                    <!-- #FFCC00 original stripe colour -->
+                    <div align="center">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
+                <td bgcolor="#2284d5" width="304">
+                    <p class="lowerstyle">
 
-</td>
+                    </p>
+                    <p class="lowerstyle">&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-        <td class="aalpha" width="2%">
-        <div align="center">
-        <img src="home_files/l2.gif" height="292" width="1">
-        </div>
-        </td>
+</body>
 
-        <td class="aalpha" width="21%"><table border="0" align="center" width="89%">
-
-          <tbody>
-<!-- old section
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#008C00" height="19">
-
-            <img src="home_files/whoca.gif" height="24" width="140">
-            </td>
-          </tr>
-
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha" height="19">
-            <img src="home_files/arrow_right.gif" height="9" width="9"> Courier Company
-            </td>
-          </tr>
-
-          <tr>
-            <td class="aalpha">
-            <img src="home_files/arrow_right.gif" height="9" width="9"> Cargo Company
-            </td>
-          </tr>
-
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Any Logistics </td>
-          </tr>
-          <tr>
-            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Shipping Company </td>
-          </tr>
-          <tr bgcolor="#EFF7FC">
-            <td class="aalpha"><img src="home_files/arrow_right.gif" height="9" width="9"> Freight Company </td>
-          </tr>
-          -->
-        </tbody></table>
-              <br>
-              <table border="0" align="center" width="90%">
-                <tbody><tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#EFF7FC" height="19"><div align="center">
-                      <p><strong> Status Check </strong>:</p>
-                  </div></td>
-                </tr>
-                <tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#FFFFFF" height="19"><div align="center"><a href="track-status.php" target="_self">Click Here </a> </div></td>
-                </tr>
-                <tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#EFF7FC" height="19"><div align="center">
-                      <p><strong> ADMIN Login </strong>:</p>
-                  </div></td>
-                </tr>
-                <tr bgcolor="#EFF7FC">
-                  <td class="aalpha" bgcolor="#FFFFFF" height="19"><div align="center"><a href="login.php" target="_self">Click here </a> </div></td>
-                </tr>
-              </tbody></table>
-              <br></td>
-      </tr>
-    </tbody></table>
-        <table border="0" align="center" width="100%">
-          <tbody><tr bgcolor="#EFF7FC">
-            <td class="aalpha" bgcolor="#FFFFFF" height="19"><div class="lowerstyle style1" align="center"></div></td>
-          </tr>
-      </tbody></table></td>
-  </tr>
-</tbody></table>
-<table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
-  <tbody><tr>
-    <td colspan="2" class="aalpha" bgcolor="#5F8AB8" height="25"><!-- #FFCC00 original stripe colour --> <div align="center">
-	</div></td>
-  </tr>
-  <tr>
-    <td bgcolor="#2284d5" height="40" width="476">&nbsp;</td>
-    <td bgcolor="#2284d5" width="304"><p class="lowerstyle">
-
-    </p>
-      <p class="lowerstyle">&nbsp;</p></td>
-  </tr>
-</tbody></table>
-
-</body></html>
+</html>

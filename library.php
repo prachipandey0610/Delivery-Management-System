@@ -139,18 +139,18 @@ function checkUser($un, $pwd, $city)
         // echo 'Iam here.......';
     } else {
         $dbHost = 'localhost'; //'139.59.71.44';
-        $dbUser = 'root'; //'admin';
+        $dbUser = 'admin'; //'admin';
         $dbPass = ''; //'f056535ccc522c61c7b3f1924605d246faa0611d39cbf352';
         $dbName = 'courier_db';
-        
+
         $dbConn1 = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName) or die('MySQL connect failed. ' . mysqli_error());
-        
+
         $sql = "SELECT * FROM tbl_courier_officers WHERE officer_name ='" . $un . "' AND off_pwd = '" . $pwd . "' AND office = '" . $city . "'";
-        
+
         $result = mysqli_query($dbConn1, $sql);
         $no = mysqli_num_rows($result);
-        
-        
+
+
         if ($no > 0) {
             $_SESSION['user_name'] = $un;
             $_SESSION['user_type'] = 'officer';

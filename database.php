@@ -3,7 +3,7 @@
 
 // database connection config
 $dbHost = 'localhost'; //'139.59.71.44';
-$dbUser = 'root'; //'admin';
+$dbUser = 'admin'; //'admin';
 $dbPass = ''; //'f056535ccc522c61c7b3f1924605d246faa0611d39cbf352';
 $dbName = 'courier_db';
 
@@ -13,15 +13,15 @@ function dbQuery($sql)
 {
     global $dbConn;
     $result = mysqli_query($dbConn, $sql);
-    
-    
+
+
     return $result;
 }
 
 function dbAffectedRows()
 {
     global $dbConn;
-    
+
     return mysqli_affected_rows($dbConn);
 }
 
