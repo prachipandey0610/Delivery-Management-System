@@ -308,7 +308,12 @@ while ($data = mysqli_fetch_array($result)) {
 
                                 <td class="style3" bgcolor="#FFFFFF"><?php echo $weight; ?>&nbsp;kg</td>
                             </tr>
+														<tr>
 
+																<td class="style3" bgcolor="#FFFFFF" align="right">Delivery Boy :</td>
+
+																<td class="style3" bgcolor="#FFFFFF"><?php echo $delivery_boy_name; ?>&nbsp;</td>
+														</tr>
                             <tr>
 
                                 <td class="style3" bgcolor="#F3F3F3" align="right">Invoice no :</td>

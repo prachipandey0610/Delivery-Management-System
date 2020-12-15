@@ -3,6 +3,11 @@ session_start();
 require_once('library.php');
 $rand = get_rand_id(8);
 echo $rand;
+
+$sql = "SELECT DISTINCT(delivery_boy_name)
+		FROM tbl_delivery_boy";
+$result = dbQuery($sql);
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -526,10 +531,14 @@ function MM_validateForm() { //v4.0
                                                         <tr>
                                                             <td class="TrackMediumBlue" align="right">Delivery boy: </td>
                                                             <td>&nbsp;</td>
-                                                            <td><select id="Shiptype" name="Shiptype">
-                                                                    <option value="Documents" selected="selected">Charlie Konda</option>
-                                                                    <option value="Parcel">Mohan Khan</option>
-                                                                    <option value="Sentiments">Obaid Kohli</option>
+                                                            <td><select id="DeliveryBoy" name="DeliveryBoy">
+                                                                    <?php
+            while ($data = dbFetchAssoc($result)) {
+                ?>
+                                                                    <option value="<?php echo $data['delivery_boy_name']; ?>"><?php echo $data['delivery_boy_name']; ?></option>
+                                                                    <?php
+            } //while
+            ?>
                                                                 </select>
                                                         </tr>
                                                         <tr>

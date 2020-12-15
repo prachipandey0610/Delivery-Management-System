@@ -366,6 +366,12 @@ if ( $no == 1 ) {
                                         <?php echo $pick_time; ?>
                                     </span> </td>
                             </tr>
+                            <tr>
+
+                                <td class="style3" bgcolor="#FFFFFF" align="right">Delivery Boy :</td>
+
+                                <td class="style3" bgcolor="#FFFFFF"><?php echo $delivery_boy_name; ?>&nbsp;</td>
+                            </tr>
 
                         </tbody>
                     </table>
