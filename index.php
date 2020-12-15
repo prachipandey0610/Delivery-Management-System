@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Online Courier Software Script, Cargo Tracking Module in PHP, MySql in India</title>
+<title>Delivery Management System</title>
 <meta name="description" content="A Simple Solution to enable Tracking in your Existing Website.">
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="css/aalpha.css" rel="stylesheet" type="text/css">
@@ -17,7 +17,7 @@
 <body>
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900" style="padding-top:20px;">
   <tbody><tr>
-    <td width="900"><img src="images/trheader.jpg" ></td>
+    <td width="900"><img src="images/trheader.jpeg" ></td>
   </tr>
   <tr>
     <td><table border="0" cellpadding="0" cellspacing="0" width="900">
@@ -114,7 +114,7 @@
 
         <p class="navi" align="justify">
 <!-- old paragraph
-        <strong>Courier Management System  </strong> is the simplest solution for
+        <strong>Delivery Management System</strong> is the simplest solution for
 
         <strong>Courier &amp; Cargo Tracking</strong>
 
@@ -122,7 +122,7 @@
 
           <p class="navi" align="justify">You can get install it yourselves or  We do the installation and brand it in your name on your hosting ! </p>
 
-          <p class="navi" align="justify">The Courier Software is Very easy to setup and manage powerful administration. Provide online
+          <p class="navi" align="justify">The Delivery Software is Very easy to setup and manage powerful administration. Provide online
 tracking system of consignment and shipping detail for International or
 domestic shipping. </p>
 
@@ -137,7 +137,7 @@ complex"
 -->
 
 <!-- New text -->
-<strong>This project deals with the ‘Courier Service management’.</strong> <br><br>
+<strong>This project deals with the ‘Delivery Management System’.</strong> <br><br>
 The system will be used for day to day activities like out return, company details, hub rates, booking, non delivery and pickup centers.<br><br>
 
 Actually It is not easy to do this process manually because it would become very hectic.<br><br>

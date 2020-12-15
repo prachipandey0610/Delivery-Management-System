@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 require_once('library.php');
 $rand = get_rand_id(8);
@@ -68,7 +68,7 @@ body {
 	margin-bottom: 0px;
 }
 -->
-</style> 
+</style>
 
 <style type="text/css">
 <!--
@@ -113,16 +113,16 @@ function MM_validateForm() { //v4.0
 
 	</td>
   </tr>
-  
+
   <tr>
     <td bgcolor="#FFFFFF">
-	
-	
-<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0"> 
-  <tbody><tr> 
-    <td id="ds_calclass"> </td> 
-  </tr> 
-</tbody></table> 
+
+
+<table class="ds_box" id="ds_conclass" style="display: none;" cellpadding="0" cellspacing="0">
+  <tbody><tr>
+    <td id="ds_calclass"> </td>
+  </tr>
+</tbody></table>
 <script type="text/javascript">
 // <!-- <![CDATA[
 
@@ -165,7 +165,7 @@ var ds_oe = ds_getel('ds_calclass');
 var ds_ce = ds_getel('ds_conclass');
 
 // Output Buffering
-var ds_ob = ''; 
+var ds_ob = '';
 function ds_ob_clean() {
 	ds_ob = '';
 }
@@ -316,7 +316,7 @@ function ds_nm() {
 	// We have passed December, let's go to the next year.
 	// Increase the current year, and set the current month to January.
 	if (ds_c_month > 12) {
-		ds_c_month = 1; 
+		ds_c_month = 1;
 		ds_c_year++;
 	}
 	// Redraw the calendar.
@@ -329,7 +329,7 @@ function ds_pm() {
 	// We have passed January, let's go back to the previous year.
 	// Decrease the current year, and set the current month to December.
 	if (ds_c_month < 1) {
-		ds_c_month = 12; 
+		ds_c_month = 12;
 		ds_c_year = ds_c_year - 1; // Can't use dash-dash here, it will make the page invalid.
 	}
 	// Redraw the calendar.
@@ -382,7 +382,7 @@ function ds_onclick(d, m, y) {
 
 function getSelected(opt)
  {
- 
+
  	var opt=document.frmExport.opt;
             for (var intLoop = 0; intLoop < opt.length; intLoop++)
 			 {
@@ -392,7 +392,7 @@ function getSelected(opt)
 					return false;
                }
 		    }
-			return true;           
+			return true;
   }
 
 // And here is the end.
@@ -405,10 +405,10 @@ function getSelected(opt)
 	<tr>
       <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add Shipment </span></td>
     </tr>
-    
+
   </tbody>
   </table>
-<form action="process.php?action=add-cons" method="post" name="frmShipment" > 
+<form action="process.php?action=add-cons" method="post" name="frmShipment" >
 <div class="gentxt" align="right">
 <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
 <tbody><tr>
@@ -498,6 +498,15 @@ function getSelected(opt)
             <td width="477"><input name="ConsignmentNo"  value="<?php echo strtoupper($rand); ?>" id="ConsignmentNo"  readonly="true" maxlength="13" size="40"  type="TEXT">
                 <span class="REDLink">*</span> </td>
           </tr>
+					<tr>
+					<td class="TrackMediumBlue" align="right">Delivery boy: </td>
+					<td>&nbsp;</td>
+					<td><select id="Shiptype" name="Shiptype">
+							<option value="Documents" selected="selected">Charlie Konda</option>
+							<option value="Parcel">Mohan Khan</option>
+							<option value="Sentiments">Obaid Kohli</option>
+					</select>
+					</tr>
           <tr>
             <td class="TrackMediumBlue" align="right">Type of Shipment  :</td>
             <td>&nbsp;</td>
@@ -602,10 +611,10 @@ function getSelected(opt)
   </tr>
 </tbody></table>
 <br>
-</form> 
+</form>
 
 
-	
+
 	</td>
   </tr>
   <tr>

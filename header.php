@@ -1,4 +1,4 @@
-<?php 
+<?php
 //session_start();
 ?>
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
@@ -14,7 +14,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="900">
 <tbody><tr>
 <td colspan="15">
-<img src="images/trheader.jpg" height="109" width="900"></td>
+<img src="images/trheader.jpeg" height="109" width="900"></td>
 </tr>
 <tr bgcolor="#2284d5">
 <td height="30" width="110"><div align="center"><span class="headtext13 style2"><strong>SHIPMENT:</strong></span></div></td>
@@ -49,7 +49,7 @@ if(isset($_SESSION['user_type'])){ //&& $_SESSION['user_type'] == 'admin-role') 
     <td bgcolor="#E2E2E2" width="240">&nbsp;<b>Admin Menu</b></td>
     <td bgcolor="#E2E2E2" width="130"><div align="center"><a href="offices-list.php" class="headtext13">Office Details</a></div></td>
     <td bgcolor="#E2E2E2" width="10">|</td>
-	
+
     <td bgcolor="#E2E2E2" width="100"><div align="center"><a href="add-office.php" class="headtext13">Add New Office</a></div></td>
     <td bgcolor="#E2E2E2" width="10">|</td>
 	<td bgcolor="#E2E2E2" width="162"><div align="center"><a href="manager-list.php" class="headtext13">Manager Details</a> </div></td>
@@ -58,7 +58,7 @@ if(isset($_SESSION['user_type'])){ //&& $_SESSION['user_type'] == 'admin-role') 
   </tr>
 </tbody>
 </table>
-<?php 
+<?php
 }
 ?>
 <table border="0" cellpadding="0" cellspacing="0" width="900">
