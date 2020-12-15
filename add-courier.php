@@ -117,9 +117,6 @@ function MM_validateForm() { //v4.0
     <?php include("header.php");
 ?>
 
-    </td>
-    </tr>
-
     <tr>
         <td bgcolor="#FFFFFF">
 

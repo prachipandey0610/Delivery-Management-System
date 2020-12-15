@@ -21,6 +21,10 @@ case 'add-office':
 case 'add-manager':
     addManager($dbConn);
     break;
+    
+case 'add-delivery-boy':
+    addDeliveryBoy($dbConn);
+    break;
 
 case 'update-status':
     updateStatus($dbConn);
@@ -37,7 +41,7 @@ case 'logOut':
 } //switch
 
 function addCons($dbConn)
-{
+{ 
     $Shippername = $_POST['Shippername'];
     $Shipperphone = $_POST['Shipperphone'];
     $Shipperaddress = $_POST['Shipperaddress'];
@@ -46,6 +50,8 @@ function addCons($dbConn)
     $Receiverphone = $_POST['Receiverphone'];
     $Receiveraddress = $_POST['Receiveraddress'];
 
+    //$DeliveryBoy = $_POST['DeliveryBoy'];
+    
     $ConsignmentNo = $_POST['ConsignmentNo'];
     $Shiptype = $_POST['Shiptype'];
     $Weight = $_POST['Weight'];
@@ -111,6 +117,19 @@ function addManager($dbConn)
     mysqli_query($dbConn, $sql);
     header('Location: manager-add-success.php');
 } //addNewOffice
+
+function addDeliveryBoy($dbConn)
+{
+    
+    $DeliveryBoyName = $_POST['DeliveryBoyName'];
+    $PhoneNo = $POST['PhoneNo'];
+    $OfficeName = $_POST['OfficeName'];
+    $sql = "INSERT INTO tbl_delivery_boy (delivery_boy_name, ph_no, office)
+			VALUES ('$DeliveryBoyName', '$PhoneNo', '$OfficeName', NOW())";
+    mysqli_query($dbConn, $sql);
+    header('Location: delivery-boy-add-success.php');
+    
+}
 
 function updateStatus($dbConn)
 {
