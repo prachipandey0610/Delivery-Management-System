@@ -9,9 +9,9 @@
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-<?php include("header.php");
+<?php require "header.php";
 ?>
-	</td>
+    </td>
   </tr>
   
   <tr>
@@ -27,12 +27,12 @@
 function validate()
   {
  if (form.Consignment.value == "" )
-		 {
-			alert("Consignment No is required.");
-			form.track.focus( );
-			return false;
-		}
-	}
+         {
+            alert("Consignment No is required.");
+            form.track.focus( );
+            return false;
+        }
+    }
 </script>
             
               <tbody><tr>
