@@ -1,5 +1,5 @@
 <?php
-//session_start();
+// session_start();
 ?>
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody>
@@ -41,8 +41,8 @@
 </tbody></table>
 
 <?php
-if(isset($_SESSION['user_type'])){ //&& $_SESSION['user_type'] == 'admin-role') {
-?>
+if (isset($_SESSION['user_type'])) { // && $_SESSION['user_type'] == 'admin-role') {
+    ?>
 <table border="0" cellpadding="0" cellspacing="0" width="900">
   <tbody><tr style="height:25px;">
     <td bgcolor="#E2E2E2" width="4">&nbsp;</td>
@@ -59,7 +59,7 @@ if(isset($_SESSION['user_type'])){ //&& $_SESSION['user_type'] == 'admin-role') 
 </tbody>
 </table>
 <?php
-}
+    } 
 ?>
 <table border="0" cellpadding="0" cellspacing="0" width="900">
   <tbody><tr style="height:25px;">

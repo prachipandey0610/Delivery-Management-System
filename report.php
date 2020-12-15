@@ -22,7 +22,8 @@ isUser();
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="780">
   <tbody><tr>
     <td width="780">
-<?php include("header.php"); ?>	
+<?php include("header.php");
+?>	
 
 	</td>
   </tr>

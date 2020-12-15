@@ -7,7 +7,7 @@ isUser();
 
 $sql = "SELECT *
 		FROM tbl_courier_officers";
-$result = mysqli_query($dbConn,$sql);		
+$result = mysqli_query($dbConn, $sql);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -27,7 +27,8 @@ $result = mysqli_query($dbConn,$sql);
   <tbody><tr>
     <td width="900">
 
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
 	</td>
   </tr>
   
@@ -107,22 +108,27 @@ function confirmDel(field,msg)
     
     </tr>
 	<?php
-	
-	while($data = mysqli_fetch_array($result)){
-	extract($data);	
-	?>
+
+ while ($data = mysqli_fetch_array($result)) {
+    extract($data);
+     ?>
       <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF" style="height:20px;">
 	
-      <td class="gentxt"><?php echo $officer_name; ?></td>
-      <td class="gentxt"><?php echo $address; ?></td>
-      <td class="gentxt"><?php echo $email; ?></td>
-      <td class="gentxt"><?php echo $ph_no; ?></td>
-      <td class="gentxt"><?php echo $office; ?></td>
+      <td class="gentxt"><?php echo $officer_name;
+    ?></td>
+      <td class="gentxt"><?php echo $address;
+    ?></td>
+      <td class="gentxt"><?php echo $email;
+    ?></td>
+      <td class="gentxt"><?php echo $ph_no;
+    ?></td>
+      <td class="gentxt"><?php echo $office;
+    ?></td>
 	  
     </tr>
     <?php
-	}//while
-	?>
+     } //while
+ ?>
 	  </tbody></table>
   <br>
 	

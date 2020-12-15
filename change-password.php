@@ -103,7 +103,8 @@ return true;
   <tbody><tr>
     <td width="900">
 	
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
 	</td>
   </tr>
   

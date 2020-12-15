@@ -6,7 +6,7 @@ isUser();
 
 $sql = "SELECT DISTINCT(off_name)
 		FROM tbl_offices";
-$result = dbQuery($sql);		
+$result = dbQuery($sql);
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -114,7 +114,8 @@ function MM_validateForm() { //v4.0
 </head>
 
 <body>
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
 
 	</td>
   </tr>
@@ -201,13 +202,15 @@ function MM_validateForm() { //v4.0
             <td>&nbsp;</td>
             <td>
 			<select name="OfficeName">
-			<?php 
-			while($data = dbFetchAssoc($result)){
-			?>
-			<option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
-			<?php 
-			}//while
-			?>
+			<?php
+ while ($data = dbFetchAssoc($result)) {
+    ?>
+			<option value="<?php echo $data['off_name'];
+     ?>"><?php echo $data['off_name'];
+     ?></option>
+			<?php
+     } //while
+ ?>
 			</select>
 			</td>
           </tr>

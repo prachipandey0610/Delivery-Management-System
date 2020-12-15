@@ -3,31 +3,32 @@
 
 
 
-	session_start();
+ session_start();
 
 require_once('database.php');
 
 require_once('library.php');
 
 $error = "";
-if(isset($_POST['txtusername'])){
-	//echo "data";
-	//echo $_POST['txtusername'];
-	//echo $_POST['txtpassword'];
-	//echo $_POST['OfficeName'];
-	$error = checkUser($_POST['txtusername'],$_POST['txtpassword'],$_POST['OfficeName']);
-}//if
+if (isset($_POST['txtusername'])) {
+    // echo "data";
+    // echo $_POST['txtusername'];
+    // echo $_POST['txtpassword'];
+    // echo $_POST['OfficeName'];
+    $error = checkUser($_POST['txtusername'], $_POST['txtpassword'], $_POST['OfficeName']);
+    } //if
 
 require_once('database.php');
 $sql = "SELECT DISTINCT off_name FROM tbl_offices";
 
-$result = mysqli_query($dbConn,$sql);
-/*
-echo "sql:";
-while($data = mysqli_fetch_array($result)){
-
-echo $data['off_name'];
-}*/
+$result = mysqli_query($dbConn, $sql);
+/**
+ * echo "sql:";
+ * while($data = mysqli_fetch_array($result)){
+ * 
+ * echo $data['off_name'];
+ * }
+ */
 ?>
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -118,7 +119,8 @@ function memloginvalidate()
                               <tr>
                                 <td colspan="3" height="10">
 								<font color="#FF0000" style="font-size:12px;">
-								<?php echo $error; ?>
+								<?php echo $error;
+?>
 								</font>
 								</td>
                                 </tr>
@@ -139,12 +141,14 @@ function memloginvalidate()
                                 <td>
 								<select name="OfficeName">
 			<?php
-			while($data = mysqli_fetch_array($result)){
-			?>
-			<option value="<?php echo $data['off_name']; ?>"><?php echo $data['off_name']; ?></option>
+ while ($data = mysqli_fetch_array($result)) {
+    ?>
+			<option value="<?php echo $data['off_name'];
+    ?>"><?php echo $data['off_name'];
+    ?></option>
 			<?php
-			}//while
-			?>
+     } //while
+ ?>
 			</select>
 								</td>
                               </tr>

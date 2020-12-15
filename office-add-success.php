@@ -9,7 +9,8 @@
 <table border="0" cellpadding="0" cellspacing="0" align="center" width="900">
   <tbody><tr>
     <td width="900">
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
 	</td>
   </tr>
   

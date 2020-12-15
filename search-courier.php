@@ -5,17 +5,17 @@ require_once('library.php');
 
 isUser();
 
-$cons= $_POST['Consignment'];
+$cons = $_POST['Consignment'];
 
 $sql = "SELECT *
 		FROM tbl_courier
 		WHERE cons_no = '$cons'";
-$result =  mysqli_query($dbConn,$sql);
+$result = mysqli_query($dbConn, $sql);
 $no = dbNumRows($result);
-if($no == 1){
-while($data = mysqli_fetch_array($result)) {
-extract($data);
-?>
+if ($no == 1) {
+    while ($data = mysqli_fetch_array($result)) {
+        extract($data);
+        ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -35,7 +35,8 @@ extract($data);
   <tbody><tr>
 
     <td width="900">
-<?php include("header.php"); ?>
+<?php include("header.php");
+        ?>
 
 	</td>
 
@@ -168,7 +169,8 @@ body {
 
             <td width="45%"><div align="left" class="style3">
 
-              <?php echo $ship_name; ?>
+              <?php echo $ship_name;
+        ?>
             </div></td>
 
           </tr>
@@ -179,7 +181,8 @@ body {
 
             <td><div align="left" class="style3">
 
-              <?php echo $phone; ?>
+              <?php echo $phone;
+        ?>
             </div></td>
           </tr>
 
@@ -188,7 +191,8 @@ body {
             <td><div align="left" class="style3">Shipper Address : </div></td>
 
             <td><div align="left" class="style3">
-			<?php echo $s_add; ?>
+			<?php echo $s_add;
+        ?>
 			</div></td>
           </tr>
         </tbody></table>
@@ -204,7 +208,8 @@ body {
 
             <td width="55%" class="style3"><div align="left">Receiver Name : </div></td>
 
-            <td width="45%" class="style3"><div align="left"><?php echo $rev_name; ?></div></td>
+            <td width="45%" class="style3"><div align="left"><?php echo $rev_name;
+        ?></div></td>
 
           </tr>
 
@@ -213,7 +218,8 @@ body {
             <td class="style3"><div align="left">Receiver Phone : </div></td>
 
             <td class="style3"><div align="left">
-			<?php echo $r_phone; ?>
+			<?php echo $r_phone;
+        ?>
             </div></td>
           </tr>
 
@@ -222,7 +228,8 @@ body {
             <td class="style3"><div align="left">Receiver Address : </div></td>
 
             <td class="style3"><div align="left">
-			<?php echo $r_add; ?>
+			<?php echo $r_add;
+        ?>
             </div></td>
           </tr>
         </tbody></table>
@@ -241,49 +248,56 @@ body {
 
       <td class="style3" bgcolor="#FFFFFF" align="right" width="336">Consignment No  : </td> 
 
-      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no; ?></font>&nbsp;</td> 
+      <td class="style3" bgcolor="#FFFFFF" width="394"><font color="#FF0000"><?php echo $cons_no;
+        ?></font>&nbsp;</td> 
     </tr> 
 
     <tr>
 
       <td class="style3" bgcolor="#FFFFFF" align="right">Ship Type  :</td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $type; ?>&nbsp;</td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $type;
+        ?>&nbsp;</td>
     </tr>
 
     <tr>
 
       <td class="style3" bgcolor="#FFFFFF" align="right">Weight :</td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $weight; ?>&nbsp;kg</td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $weight;
+        ?>&nbsp;kg</td>
     </tr>
 
     <tr>
 
       <td class="style3" bgcolor="#F3F3F3" align="right">Invoice no  :</td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $invice_no; ?>&nbsp;</td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $invice_no;
+        ?>&nbsp;</td>
     </tr>
 
     <tr>
 
       <td class="style3" bgcolor="#F3F3F3" align="right">Booking Mode :</td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $book_mode; ?>&nbsp;</td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $book_mode;
+        ?>&nbsp;</td>
     </tr>
 
     <tr>
 
       <td class="style3" bgcolor="#F3F3F3" align="right">Total freight : </td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $freight; ?>&nbsp;Rs.</td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $freight;
+        ?>&nbsp;Rs.</td>
     </tr>
 
     <tr>
 
       <td class="style3" bgcolor="#F3F3F3" align="right">Mode : </td>
 
-      <td class="style3" bgcolor="#FFFFFF"><?php echo $mode; ?></td>
+      <td class="style3" bgcolor="#FFFFFF"><?php echo $mode;
+        ?></td>
     </tr> 
 
     <tr> 
@@ -292,8 +306,10 @@ body {
 
       <td class="style3" bgcolor="#FFFFFF">
 
-        <?php echo $pick_date; ?> -<span class="gentxt">
-<?php echo $pick_time; ?>
+        <?php echo $pick_date;
+        ?> -<span class="gentxt">
+<?php echo $pick_time;
+        ?>
         </span> </td> 
     </tr> 
 
@@ -301,7 +317,8 @@ body {
 
       <td class="style3" bgcolor="#FFFFFF" align="right">Status :</td> 
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status; ?></td> 
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $status;
+        ?></td> 
     </tr> 
 
      
@@ -310,7 +327,8 @@ body {
 
       <td class="style3" bgcolor="#FFFFFF" align="right" valign="top">Comments :</td> 
 
-      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments; ?></td> 
+      <td class="style3" bgcolor="#FFFFFF">&nbsp;<?php echo $comments;
+        ?></td> 
     </tr> 
   </tbody></table> 
 
@@ -337,11 +355,11 @@ body {
 
 
 </body></html>
-<?php }//while
-}//if
+<?php } //while
+    } //if
 else {
-echo 'In else....';
-?>
+    echo 'In else....';
+    ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html><head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -361,7 +379,8 @@ echo 'In else....';
   <tbody><tr>
 
     <td width="900">
-<?php include("header.php"); ?>
+<?php include("header.php");
+    ?>
 
 	</td>
 
@@ -485,7 +504,8 @@ body {
   <table bgcolor="#EEEEEE" cellpadding="2" cellspacing="2" align="center" width="75%">
 
      <tbody><tr>
-<h3 style="font-family:Verdana; font-size:12px;">Consignment Number <font color="#FF0000"><?php echo $cons; ?></font> not found. Please verify the Number.<br/>
+<h3 style="font-family:Verdana; font-size:12px;">Consignment Number <font color="#FF0000"><?php echo $cons;
+    ?></font> not found. Please verify the Number.<br/>
 <a href="search-edit.php">Go Back</a> to Search Again.</h3>
        </tr>
 
@@ -518,6 +538,6 @@ body {
 
 
 
-<?php 
-}//else
+<?php
+    } //else
 ?>

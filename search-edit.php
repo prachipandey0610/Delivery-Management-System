@@ -18,7 +18,8 @@ isUser();
 </style>
 </head>
 <body>
-<?php include("header.php"); ?>
+<?php include("header.php");
+?>
 <script language="javascript">
 function validate()
   {
