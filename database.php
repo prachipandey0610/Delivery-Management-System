@@ -2,9 +2,9 @@
 
 
 // database connection config
-$dbHost = 'localhost'; //'139.59.71.44';
-$dbUser = 'admin'; //'admin';
-$dbPass = ''; //'f056535ccc522c61c7b3f1924605d246faa0611d39cbf352';
+$dbHost = 'localhost';
+$dbUser = 'admin'; 
+$dbPass = '';
 $dbName = 'courier_db';
 
 $dbConn = mysqli_connect($dbHost, $dbUser, $dbPass, $dbName) or die('MySQL connect failed. ' . mysqli_error());
