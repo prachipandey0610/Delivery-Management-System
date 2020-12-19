@@ -144,7 +144,7 @@ function MM_validateForm() { //v4.0
 
                 </tbody>
             </table>
-            <form action="process.php?action=add-delivery-boy" method="post" name="frmShipment">
+            <form action="process.php?action=add-delivery-boy" method="POST" name="frmShipment">
                 <div class="gentxt" align="right">
                     <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
                         <tbody>

@@ -577,7 +577,7 @@ function MM_validateForm() { //v4.0
                                                                 </select></td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="TrackMediumBlue" align="right">Total freight : </td>
+                                                            <td class="TrackMediumBlue" align="right">Total freight cost : </td>
                                                             <td>&nbsp;</td>
                                                             <td><input id="Totalfreight" size="10" maxlength="13" name="Totalfreight"></td>
                                                         </tr>
@@ -669,8 +669,7 @@ function MM_validateForm() { //v4.0
             </table>
         </td>
     </tr>
-    </tbody>
-    </table>
+
 </body>
 
 </html>

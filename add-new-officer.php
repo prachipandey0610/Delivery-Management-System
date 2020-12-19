@@ -122,9 +122,6 @@ function MM_validateForm() { //v4.0
     <?php require "header.php";
 ?>
 
-    </td>
-    </tr>
-
     <tr>
         <td bgcolor="#FFFFFF">
 
@@ -281,8 +278,7 @@ function MM_validateForm() { //v4.0
             </table>
         </td>
     </tr>
-    </tbody>
-    </table>
+
 
 
 </body>

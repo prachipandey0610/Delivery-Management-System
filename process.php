@@ -49,8 +49,6 @@ function addCons($dbConn)
     $Receivername = $_POST['Receivername'];
     $Receiverphone = $_POST['Receiverphone'];
     $Receiveraddress = $_POST['Receiveraddress'];
-
-    $DeliveryBoy = $_POST['DeliveryBoy'];
     
     $ConsignmentNo = $_POST['ConsignmentNo'];
     $Shiptype = $_POST['Shiptype'];
@@ -62,11 +60,12 @@ function addCons($dbConn)
     $Totalfreight = $_POST['Totalfreight'];
     $Mode = $_POST['Mode'];
 
-
     $Packupdate = $_POST['Packupdate'];
     $Pickuptime = $_POST['Pickuptime'];
     $status = $_POST['status'];
     $Comments = $_POST['Comments'];
+    
+    $DeliveryBoy = $_POST['DeliveryBoy'];
 
 
     $sql = "INSERT INTO tbl_courier (cons_no, ship_name, phone, s_add, rev_name, r_phone, r_add,  type, weight, invice_no, qty, book_mode, freight, mode, pick_date, pick_time, status, comments, book_date, delivery_boy_name )
@@ -120,7 +119,7 @@ function addManager($dbConn)
 
 function addDeliveryBoy($dbConn)
 {
-    
+    global $dbConn;
     $DeliveryBoyName = $_POST['DeliveryBoyName'];
     $PhoneNo = $POST['PhoneNo'];
     $OfficeName = $_POST['OfficeName'];

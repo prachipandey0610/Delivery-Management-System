@@ -17,52 +17,73 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="900">
                     <tbody>
                         <tr>
-                            <td colspan="15">
+                            <td colspan="16">
                                 <img src="images/trheader.jpeg" height="109" width="900">
                             </td>
                         </tr>
                         <tr bgcolor="#2284d5">
-                            <td height="30" width="110">
+                            <style>
+                                td {
+                                    white-space: nowrap;
+
+                                }
+
+                            </style>
+                            <td height="30">
                                 <div align="center"><span class="headtext13 style2"><strong>SHIPMENT:</strong></span></div>
                             </td>
-                            <td height="30" width="83">
+                            <td height="30">
                                 <div class="lowerstyle" align="center"> <a href="add-courier.php">Add</a></div>
                             </td>
-                            <td width="4">
-                                <div align="left">|</div>
+                            <td width="3">
+                                <div align="center">|</div>
                             </td>
-                            <td height="30" width="74">
+                            <td height="30">
                                 <div class="lowerstyle" align="center"><a href="courier-list.php">Update </a></div>
                             </td>
-                            <td width="4">
-                                <div align="left">|</div>
+                            <td width="3">
+                                <div align="center">|</div>
                             </td>
-                            <td width="89">
+                            <td>
                                 <div class="lowerstyle" align="center">
                                     <div align="center"><a href="search-edit.php">Search &amp; Edit </a></div>
                                 </div>
                             </td>
                             <td width="3">
-                                <div align="left">|</div>
+                                <div align="center">|</div>
                             </td>
-                            <td height="30" width="96">
+                            <td height="30">
                                 <div align="center"><span class="headtext13 style2"><strong>REPORTS</strong></span><span class="heading"><strong> : </strong></span></div>
                             </td>
-                            <td height="30" width="83">
+                            <td height="30">
                                 <div class="lowerstyle" align="center"><a href="delivered-list.php">Delivered </a> </div>
                             </td>
                             <td width="3">|</td>
-                            <td width="76">
+                            <td>
                                 <div class="lowerstyle" align="center"><a href="datewise-list.php">Datewise </a> </div>
                             </td>
-                            <td width="3">&nbsp;</td>
-                            <td width="71">
-                                <div class="lowerstyle" align="center"><a href="http://tracking4web.com/admin/report_statuswise.php?status=all"></a> </div>
-                            </td>
-                            <td width="3"></td>
-                            <td height="30" width="80">
 
+                            <td width="3">
+                                <div align="center">|</div>
                             </td>
+
+
+
+                            <td height="30">
+                                <div align="center"><span class="headtext13 style2"><strong>Delivery Boy:</strong></span></div>
+                            </td>
+                            <td height="30">
+                                <div class="lowerstyle" align="center"> <a href="add-new-delivery-boy.php">Add</a></div>
+                            </td>
+                            <td width="3">
+                                <div align="center">|</div>
+                            </td>
+                            <td height="30">
+                                <div class="lowerstyle" align="center"><a href="delivery-boy-list.php">List all</a></div>
+                            </td>
+
+
+
                         </tr>
 
                     </tbody>
