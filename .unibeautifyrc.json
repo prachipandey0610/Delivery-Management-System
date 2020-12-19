@@ -1,0 +1,121 @@
+{
+  "PHP": {
+    "beautifiers": [
+      "PHP-CS-Fixer",
+      "PHP_CodeSniffer"
+    ]
+  },
+  "HTML": {
+    "beautifiers": [
+      "Pretty Diff",
+      "JS-Beautify"
+    ],
+    "indent_size": 4,
+    "indent_style": "space",
+    "quotes": "double",
+    "wrap_line_length": 0,
+    "end_with_newline": false,
+    "indent_comments": true,
+    "preserve_newlines": false,
+    "brace_style": "expand",
+    "force_indentation": true,
+    "indent_inner_html": true,
+    "indent_scripts": "normal",
+    "newline_before_tags": [],
+    "wrap_attributes": "auto"
+  },
+  "CSS": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify",
+      "CSScomb"
+    ],
+    "indent_size": 4,
+    "indent_style": "space",
+    "quotes": "double",
+    "wrap_line_length": 0,
+    "end_with_newline": false,
+    "pragma_insert": false,
+    "pragma_require": false,
+    "preserve_newlines": false,
+    "newline_between_rules": true,
+    "no_leading_zero": true,
+    "selector_separator_newline": true
+  },
+  "HTML+ERB": {
+    "beautifiers": [
+      "Pretty Diff"
+    ],
+    "indent_size": 4,
+    "indent_style": "space",
+    "quotes": "double",
+    "wrap_line_length": 0,
+    "indent_comments": true,
+    "force_indentation": true
+  },
+  "JSON": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify"
+    ],
+    "indent_size": 4,
+    "indent_style": "space",
+    "max_preserve_newlines": 0,
+    "quotes": "double"
+  },
+  "Markdown": {
+    "beautifiers": [
+      "Prettier"
+    ],
+    "wrap_line_length": 0,
+    "pragma_insert": false,
+    "pragma_require": false,
+    "wrap_prose": "preserve"
+  },
+  "JavaScript": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify",
+      "ESLint"
+    ],
+    "indent_size": 4,
+    "indent_style": "space",
+    "max_preserve_newlines": 0,
+    "quotes": "double",
+    "wrap_line_length": 0,
+    "end_with_newline": false,
+    "indent_comments": true,
+    "pragma_insert": false,
+    "pragma_require": false,
+    "preserve_newlines": false,
+    "brace_style": "expand",
+    "align_assignments": true,
+    "arrow_parens": "as-needed",
+    "break_chained_methods": true,
+    "comma_first": false,
+    "end_with_comma": true,
+    "end_with_semicolon": true,
+    "indent_chained_methods": true,
+    "jslint_happy": true,
+    "jsx_brackets": true,
+    "keep_array_indentation": false,
+    "multiline_ternary": "always-multiline",
+    "object_curly_spacing": true,
+    "remove_trailing_whitespace": true,
+    "space_after_anon_function": true,
+    "space_before_conditional": true,
+    "space_in_empty_paren": false,
+    "space_in_paren": false,
+    "unescape_strings": true
+  },
+  "SQL": {
+    "beautifiers": [
+      "sqlformat"
+    ],
+    "indent_size": 4,
+    "identifier_case": "lowercase"
+  }
+}

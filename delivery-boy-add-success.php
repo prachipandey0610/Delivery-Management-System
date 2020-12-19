@@ -50,7 +50,7 @@
                                                     <td class="bottom" valign="middle">&nbsp;</td>
                                                 </tr>
                                                 <tr bgcolor="EFEFEF">
-                                                    <td valign="top">Courier status changed to Delivered. <a href="courier-list.php">Click Here</a> To View The status </td>
+                                                    <td valign="top">Delivery boy is Added Successfully . <a href="delivery-boy-list.php">Click Here</a> To View all Delivery boys' List </td>
                                                 </tr>
                                                 <tr bgcolor="EFEFEF">
                                                     <td class="TrackNormalBlue" bgcolor="#FFFFFF" valign="top">&nbsp;</td>

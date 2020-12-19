@@ -2,13 +2,11 @@
 session_start();
 require_once 'database.php';
 require_once 'library.php';
+
 isUser();
 
-$sql = "SELECT cid, cons_no, ship_name, rev_name, pick_date, pick_time, status
-		FROM tbl_courier
-		WHERE status = 'Delivered'
-		ORDER BY cid DESC 
-		LIMIT 0, 20";
+$sql = "SELECT *
+		FROM tbl_delivery_boy";
 $result = mysqli_query($dbConn, $sql);
 
 ?>
@@ -89,7 +87,7 @@ $result = mysqli_query($dbConn, $sql);
                             </tr>
                             <tr>
                                 <td class="LargeBlue" bgcolor="#FFFFFF" align="left">
-                                    <div class="Partext1" align="center"><strong>Update Shipment </strong></div>
+                                    <div class="Partext1" align="center"><strong>View All Delivery Boy Details </strong></div>
                                 </td>
                             </tr>
                         </tbody>
@@ -107,30 +105,21 @@ $result = mysqli_query($dbConn, $sql);
                     <table class="blackbox" border="0" cellpadding="1" cellspacing="1" align="center" width="95%">
                         <tbody>
                             <tr class="BoldRED" bgcolor="#FFFFFF" style="height:20px;">
-                                <td class="newtext" bgcolor="#EDEDED" width="6%">
-                                    <div align="center">Edit</div>
-                                </td>
-                                <td class="newtext" bgcolor="#EDEDED" width="10%">Consignment No </td>
-                                <td class="newtext" bgcolor="#EDEDED" width="7%">Shipper</td>
-                                <td class="newtext" bgcolor="#EDEDED" width="11%">Receiver</td>
-                                <td class="newtext" bgcolor="#EDEDED" width="11%">Pickup Date/Time</td>
-                                <td class="newtext" bgcolor="#EDEDED" width="9%">Status</td>
+                                <td class="newtext" bgcolor="#EDEDED" width="20%">Delivery Boy Name </td>
+                                <td class="newtext" bgcolor="#EDEDED" width="15%">Phone Number</td>
+                                <td class="newtext" bgcolor="#EDEDED" width="25%">Office Name </td>
+
                             </tr>
                             <?php
 
     while ($data = mysqli_fetch_array($result)) {
         extract($data); ?>
-                            <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF">
+                            <tr onMouseOver="this.bgColor='gold';" onMouseOut="this.bgColor='#FFFFFF';" bgcolor="#FFFFFF" style="height:20px;">
 
-                                <td class="gentxt" align="center">
-                                    <a href="edit-courier.php?cid=<?php echo $cid; ?>">
-                                        <img src="images/edit_icon.gif" border="0" height="20" width="20"></a>
-                                </td>
-                                <td class="gentxt"><?php echo $cons_no; ?></td>
-                                <td class="gentxt"><?php echo $ship_name; ?></td>
-                                <td class="gentxt"><?php echo $rev_name; ?></td>
-                                <td class="gentxt"><?php echo $pick_date; ?> - <?php echo $pick_time; ?></td>
-                                <td class="gentxt"><?php echo $status; ?></td>
+                                <td class="gentxt"><?php echo $delivery_boy_name; ?></td>
+                                <td class="gentxt"><?php echo $ph_no; ?></td>
+                                <td class="gentxt"><?php echo $office; ?></td>
+
                             </tr>
                             <?php
     } //while

@@ -122,6 +122,8 @@ function MM_validateForm() { //v4.0
     <?php require "header.php";
 ?>
 
+
+
     <tr>
         <td bgcolor="#FFFFFF">
 
@@ -137,12 +139,12 @@ function MM_validateForm() { //v4.0
             <table border="0" align="center" width="100%">
                 <tbody>
                     <tr>
-                        <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add New Office Manager </span></td>
+                        <td class="Partext1" bgcolor="F9F5F5" align="center"><span class="headtext13">Add New Delivery Boy </span></td>
                     </tr>
 
                 </tbody>
             </table>
-            <form action="process.php?action=add-manager" method="post" name="frmShipment">
+            <form action="process.php?action=add-delivery-boy" method="POST" name="frmShipment">
                 <div class="gentxt" align="right">
                     <table border="0" cellpadding="1" cellspacing="1" align="center" width="83%">
                         <tbody>
@@ -180,33 +182,16 @@ function MM_validateForm() { //v4.0
                                                         <tr>
                                                             <td colspan="3" class="TrackMediumBlue" align="right">
                                                                 <div class="gentxt" align="right">
-                                                                    <div class="headtext13" align="left"><strong>Office Manager info : </strong></div>
+                                                                    <div class="headtext13" align="left"><strong>Delivery boy info : </strong></div>
                                                                 </div>
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="TrackMediumBlue" align="right" width="138">Manager Name :</td>
+                                                            <td class="TrackMediumBlue" align="right" width="138">Delivery Boy Name :</td>
                                                             <td width="13">&nbsp;</td>
                                                             <td width="477">
-                                                                <input name="ManagerName" type="TEXT" id="ManagerName" size="40" maxlength="100">
+                                                                <input name="DeliveryBoyName" type="TEXT" id="DeliveryBoyName" size="40" maxlength="100">
                                                             </td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="TrackMediumBlue" align="right">Password :</td>
-                                                            <td>&nbsp;</td>
-                                                            <td><input name="Password" id="Password" maxlength="20" size="40" type="password"></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="TrackMediumBlue" align="right">Address :</td>
-                                                            <td>&nbsp;</td>
-                                                            <td><span class="REDLink">
-                                                                    <textarea name="Address" cols="27" rows="2" id="Address"></textarea>
-                                                                    *</span></td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td class="TrackMediumBlue" align="right">Email :</td>
-                                                            <td>&nbsp;</td>
-                                                            <td><input name="Email" id="Email" maxlength="40" size="40" type="TEXT"></td>
                                                         </tr>
                                                         <tr>
                                                             <td class="TrackMediumBlue" align="right">Phone No. : </td>
@@ -238,7 +223,7 @@ function MM_validateForm() { //v4.0
                                                         <tr>
                                                             <td align="right">&nbsp;</td>
                                                             <td>&nbsp;</td>
-                                                            <td><input name="Submit" type="submit" onClick="MM_validateForm('ManagerName','','R','Password','','R','Email','','RisEmail','PhoneNo','','R','Address','','R');return document.MM_returnValue" value="Add New Office Manager"></td>
+                                                            <td><input name="Submit" type="submit" onClick="MM_validateForm('DeliveryBoyName' , '' , 'R' ,   'PhoneNo' , '' , 'R');return document.MM_returnValue" value="Add New Delivery Boy"></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
